@@ -1,0 +1,40 @@
+.client-scroll-container {
+  overflow: hidden;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-scroll {
+  display: flex;
+  animation: scrollLeftToRight 20s linear infinite;
+}
+
+.client-image {
+  margin: 0 30px;
+  height: 60px; /* Adjust this based on your image size */
+  object-fit: contain;
+}
+@media (max-width: 640px) {
+  .client-image {
+    height: 40px; /* Smaller image size for small screens */
+    margin: 0 15px; /* Reduce spacing if needed */
+  }
+  .client-scroll-container {
+  overflow: hidden;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+@keyframes scrollLeftToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
