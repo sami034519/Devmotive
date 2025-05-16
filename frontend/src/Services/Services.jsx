@@ -34,7 +34,7 @@ function Services() {
         <div className="grid lg:grid-cols-3 grid-cols-1 justify-items-center gap-x-4 lg:pt-20 lg:px-56 gap-y-5">
           <div
             className="flex flex-col items-center justify-center text-center max-w-96 gap-5 border-2  border-slate-200 pb-5
-                 rounded-tl-3xl rounded-br-3xl  lg:h-[650px] lg:w-auto w-80 overflow-hidden"
+                 rounded-tl-3xl rounded-br-3xl   lg:w-auto w-80 overflow-hidden"
             data-aos="fade-up"
           >
             <div>
@@ -97,7 +97,7 @@ function Services() {
           </div>
           <div
             className="flex flex-col items-center justify-center text-center max-w-96 gap-5 border-2 border-slate-200 pb-5
-                 rounded-tl-3xl rounded-br-3xl lg:h-[650px]   overflow-hidden lg:w-auto w-80 "
+                 rounded-tl-3xl rounded-br-3xl    overflow-hidden lg:w-auto w-80 "
             data-aos="fade-up"
           >
             <div>
@@ -116,8 +116,7 @@ function Services() {
                 Devmotive, their expertise in SaaS application development
                 ensures businesses can build secure, high-performance, and
                 scalable platforms that cater to diverse user needs across
-                industries.Their team of skilled developers works closely with
-                clients to understand
+                industries.
               </p>
             </div>
             <div>
