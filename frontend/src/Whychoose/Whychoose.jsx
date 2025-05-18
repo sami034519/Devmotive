@@ -37,7 +37,7 @@ function Whychoose() {
             src={homeicons}
             alt=""
           />
-          <div className="absolute lg:top-[270px] top-28 left-9 lg:left-[300px] border-dashed border-2 rounded-full border-slate-400 p-1">
+          <div className="absolute lg:top-[230px] top-28 left-9 lg:left-[260px] border-dashed border-2 rounded-full border-slate-400 p-1">
             {" "}
             <img className=" rounded-full lg:h-auto h-10" src={home1} alt="" />
           </div>
@@ -50,7 +50,7 @@ function Whychoose() {
             STRATEGY
           </h1>
 
-          <div className="absolute top-28 left-24 lg:top-[270px] lg:left-[32%]  border-dashed border-2 rounded-full border-slate-400 p-1">
+          <div className="absolute top-[120px] left-24 lg:top-[220px] lg:left-[32%]  border-dashed border-2 rounded-full border-slate-400 p-1">
             {" "}
             <img className="lg:h-44 rounded-full  h-12" src={home2} alt="" />
           </div>
@@ -63,7 +63,7 @@ function Whychoose() {
             PLANNING
           </h1>
 
-          <div className="absolute left-44 top-24  lg:top-[200px] lg:left-[50%] border-dashed border-2 rounded-full border-slate-400 p-1">
+          <div className="absolute left-44 top-24  lg:top-[150px] lg:left-[50%] border-dashed border-2 rounded-full border-slate-400 p-1">
             {" "}
             <img className="lg:h-48 rounded-full h-14" src={home3} alt="" />
           </div>
@@ -76,7 +76,7 @@ function Whychoose() {
             BUILD
           </h1>
 
-          <div className="absolute lg:top-[160px] lg:right-[10%] right-5 top-24 border-dashed border-2 rounded-full border-slate-400 p-1">
+          <div className="absolute lg:top-[120px] lg:right-[10%] right-5 top-24 border-dashed border-2 rounded-full border-slate-400 p-1">
             {" "}
             <img className="rounded-full lg:h-auto h-20" src={home4} alt="" />
           </div>

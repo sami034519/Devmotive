@@ -6,15 +6,20 @@ import {
   FaTwitter,
   FaLinkedinIn,
   FaBars,
+  FaCloud,
+  FaShieldAlt,
+  FaChartLine,
+  FaCode,
+  FaUserTie,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FcGoogle } from "react-icons/fc";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import logo from "../images/devmotivelogo.png";
-import { Link } from "react-router-dom";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showServicesMenu, setShowServicesMenu] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -26,13 +31,41 @@ function Header() {
     { name: "CONTACT US", path: "/contact" },
   ];
 
+  const servicesSubmenu = [
+    {
+      name: "Software Development",
+      path: "/services/software-development",
+      icon: <FaCode />,
+    },
+    {
+      name: "Cybersecurity Solutions",
+      path: "/services/cybersecurity",
+      icon: <FaShieldAlt />,
+    },
+    {
+      name: "Cloud & DevOps",
+      path: "/services/cloud-devops",
+      icon: <FaCloud />,
+    },
+    {
+      name: "Finance & Accounting Services",
+      path: "/services/finance-accounting",
+      icon: <FaChartLine />,
+    },
+    {
+      name: "IT Consulting",
+      path: "/services/it-consulting",
+      icon: <FaUserTie />,
+    },
+  ];
+
   const linkStyle =
     "text-gray-700 font-medium px-3 py-2 transition-all duration-200";
-  const activeStyle = "text-red-600 border-b-2 border-red-600 ";
+  const activeStyle = "text-red-600 border-b-2 border-red-600";
 
   return (
     <>
-      {/* Top Bar */}
+      {/* === Top Bar === */}
       <div className="bg-gray-800 text-white text-sm px-4 flex justify-between lg:justify-around items-center py-2 z-40 relative">
         {/* Left Side */}
         <div className="lg:flex hidden items-center space-x-4">
@@ -52,81 +85,95 @@ function Header() {
 
         {/* Right Side */}
         <div className="flex items-center space-x-3">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:bg-blue-500 border-2 hover:rounded-full border-white p-1"
-          >
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:bg-blue-500 border-2 hover:rounded-full border-white p-1">
             <FaFacebookF />
           </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:bg-blue-400 border-2 hover:rounded-full  border-white p-1"
-          >
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:bg-blue-400 border-2 hover:rounded-full border-white p-1">
             <FaTwitter />
           </a>
-          <a
-            href="https://google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:bg-red-500 border-2 hover:rounded-full  border-white p-1"
-          >
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="hover:bg-red-500 border-2 hover:rounded-full border-white p-1">
             <FcGoogle />
           </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:bg-blue-600 border-2 hover:rounded-full  border-white p-1"
-          >
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:bg-blue-600 border-2 hover:rounded-full border-white p-1">
             <FaLinkedinIn />
           </a>
-          <a
-            href="https://wa.me/1234567890"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:bg-green-500 hover:rounded-full  border-2 border-white p-1"
-          >
+          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:bg-green-500 hover:rounded-full border-2 border-white p-1">
             <FaWhatsapp />
           </a>
-          <button className="font-medium text-white text-[13px] leading-[36px] bg-red-600 px-2 py-1   hover:bg-green-600">
+          <button className="font-medium text-white text-[13px] leading-[36px] bg-red-600 px-2 py-1 hover:bg-green-600">
             Get a Free Quote
           </button>
         </div>
       </div>
 
-      {/* Menu Bar */}
+      {/* === Menu Bar === */}
       <div className="bg-white shadow-md z-40 relative">
         <div className="flex lg:justify-around justify-between items-center px-4 lg:px-16 py-4">
           {/* Logo */}
           <Link to="/">
             <img src={logo} alt="Logo" className="h-16 lg:h-24" />
           </Link>
-          {/* Toggle Button */}
+
+          {/* Mobile Toggle Button */}
           <button onClick={toggleMenu} className="lg:hidden text-2xl">
             <FaBars />
           </button>
 
-          {/* Desktop Menu */}
-          <div className="hidden lg:flex space-x-6">
-            {navItems.map((item) => (
-              <NavLink
-                key={item.path}
-                to={item.path}
-                className={({ isActive }) =>
-                  `${linkStyle} ${
-                    isActive
-                      ? activeStyle
-                      : "hover:text-red-600 hover:border-b-2 hover:border-red-600 "
-                  }`
-                }
-              >
-                {item.name}
-              </NavLink>
-            ))}
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex space-x-6 items-center relative">
+            {navItems.map((item) =>
+              item.name === "SERVICES" ? (
+                <div
+                  key={item.name}
+                  className="relative"
+                  onMouseEnter={() => setShowServicesMenu(true)}
+                  onMouseLeave={() => setShowServicesMenu(false)}
+                >
+                  <NavLink
+                    to={item.path}
+                    className={({ isActive }) =>
+                      `${linkStyle} ${
+                        isActive
+                          ? activeStyle
+                          : "hover:text-red-600 hover:border-b-2 hover:border-red-600"
+                      }`
+                    }
+                  >
+                    {item.name}
+                  </NavLink>
+
+                  {/* Submenu Dropdown */}
+                  {showServicesMenu && (
+                    <div className="absolute top-full left-0 bg-white shadow-lg border mt-2 rounded z-50 w-64">
+                      {servicesSubmenu.map((service, index) => (
+                        <Link
+                          key={index}
+                          to={service.path}
+                          className="flex items-center px-4 py-2 hover:bg-red-100 text-sm text-gray-800"
+                        >
+                          <span className="mr-2 text-red-600">{service.icon}</span>
+                          {service.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <NavLink
+                  key={item.path}
+                  to={item.path}
+                  className={({ isActive }) =>
+                    `${linkStyle} ${
+                      isActive
+                        ? activeStyle
+                        : "hover:text-red-600 hover:border-b-2 hover:border-red-600"
+                    }`
+                  }
+                >
+                  {item.name}
+                </NavLink>
+              )
+            )}
           </div>
         </div>
 
@@ -146,7 +193,7 @@ function Header() {
                   `${linkStyle} ${
                     isActive
                       ? activeStyle
-                      : "hover:text-red-600 hover:border-b-2 hover:border-red-600 "
+                      : "hover:text-red-600 hover:border-b-2 hover:border-red-600"
                   }`
                 }
               >
