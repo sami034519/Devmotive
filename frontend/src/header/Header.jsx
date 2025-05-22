@@ -101,7 +101,7 @@ function Header() {
           <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:bg-green-500 hover:rounded-full border-2 border-white p-1">
             <FaWhatsapp />
           </a>
-          <button className="font-medium text-white text-[13px] leading-[36px] bg-red-600 px-3 py-1 hover:bg-green-600 rounded-full">
+          <button className="font-medium text-white text-[13px] leading-[36px] bg-red-600 px-3  hover:bg-green-600 rounded-full">
             Get a Free Quote
           </button>
         </div>
