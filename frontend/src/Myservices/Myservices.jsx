@@ -223,7 +223,7 @@ function Myservices() {
           <p className="text-sm lg:text-lg max-w-xl mt-3 animate__animated animate__fadeInLeft animate__delay-2s lg:block hidden">
             At DevMotives, we craft user-friendly, scalable software to help your business grow.
           </p>
-          <button className="mt-5 px-6 py-2 bg-red-600 text-white text-sm lg:text-lg animate__animated animate__fadeInUp animate__delay-3s">
+          <button className="mt-5 px-6 py-2 bg-red-600 text-white text-sm lg:text-lg animate__animated animate__fadeInUp animate__delay-3s rounded-full">
             READ MORE
           </button>
         </div>
