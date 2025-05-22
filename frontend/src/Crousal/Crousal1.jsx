@@ -22,6 +22,7 @@ function Crousal1({ active }) {
     <div className="relative w-full h-[80vh] overflow-hidden z-30">
       {/* Background Image */}
       <img
+      loading="lazy"
         src={crousal1}
         alt="Background"
         className="w-full h-[200px] lg:h-[80vh] object-cover"

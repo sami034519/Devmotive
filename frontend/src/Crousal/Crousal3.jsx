@@ -19,6 +19,7 @@ function Crousal3({ active }) {
     <div className="relative lg:h-[80vh] w-full overflow-hidden z-30">
       {/* Background Image */}
       <img
+      loading="lazy"
         src={background}
         alt="Background"
         className="w-full h-[200px] lg:h-[80vh] object-cover"

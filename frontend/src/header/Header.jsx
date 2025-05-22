@@ -15,7 +15,7 @@ import {
 import { MdEmail } from "react-icons/md";
 import { FcGoogle } from "react-icons/fc";
 import { NavLink, Link } from "react-router-dom";
-import logo from "../images/devmotivelogo.png";
+import logo from "../images/devmotivelogoupdate.png";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -65,8 +65,9 @@ function Header() {
 
   return (
     <>
+    <div className="fixed top-0 left-0 w-full z-50">
       {/* === Top Bar === */}
-      <div className="bg-gray-800 text-white text-sm px-4 flex justify-between lg:justify-around items-center py-2 z-40 relative">
+      <div className="bg-gray-800 text-white text-sm px-4 flex justify-between lg:justify-around items-center py-2 z-40">
         {/* Left Side */}
         <div className="lg:flex hidden items-center space-x-4">
           <div className="flex items-center gap-1 border-r-2 border-white pr-3">
@@ -111,7 +112,7 @@ function Header() {
         <div className="flex lg:justify-around justify-between items-center px-4 lg:px-16 py-4">
           {/* Logo */}
           <Link to="/">
-            <img src={logo} alt="Logo" className="h-16 lg:h-24" />
+            <img src={logo} alt="Logo" className="h-10 lg:h-14" loading="lazy"/>
           </Link>
 
           {/* Mobile Toggle Button */}
@@ -143,20 +144,20 @@ function Header() {
                   </NavLink>
 
                   {/* Submenu Dropdown */}
-                  {showServicesMenu && (
-                    <div className="absolute top-full left-0 bg-white shadow-lg border mt-2 rounded z-50 w-64">
-                      {servicesSubmenu.map((service, index) => (
-                        <Link
-                          key={index}
-                          to={service.path}
-                          className="flex items-center px-4 py-2 hover:bg-red-100 text-sm text-gray-800"
-                        >
-                          <span className="mr-2 text-red-600">{service.icon}</span>
-                          {service.name}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
+                 {showServicesMenu && (
+  <div className="absolute top-full left-0 bg-white shadow-lg border mt-2 rounded z-50 w-[40rem] grid grid-cols-2 gap-2 p-4">
+    {servicesSubmenu.map((service, index) => (
+      <Link
+        key={index}
+        to={service.path}
+        className="group flex items-center px-4 py-2 rounded text-lg text-gray-800 hover:bg-red-600 hover:text-white transition"
+      >
+        <span className="mr-2 text-red-600 group-hover:text-white">{service.icon}</span>
+        {service.name}
+      </Link>
+    ))}
+  </div>
+)}
                 </div>
               ) : (
                 <NavLink
@@ -203,7 +204,9 @@ function Header() {
           </div>
         </div>
       </div>
+      </div>
     </>
+    
   );
 }
 

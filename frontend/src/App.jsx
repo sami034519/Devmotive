@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./header/Header";
 import Footer from "./Footer/Footer";
-
+import SoftwareDevelopment from "./SoftwareDevelopmentService/SoftwareDevelopment";
 import Home from "./Home/Home";
-
+import Myservices from "./Myservices/Myservices";
 function App() {
   return (
     <Router>
@@ -14,6 +14,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Myservices/>} />
+
+        <Route path="/services/software-development" element={<SoftwareDevelopment />} />
+
       </Routes>
       <Footer />
     </Router>

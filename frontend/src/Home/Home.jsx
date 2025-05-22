@@ -23,7 +23,7 @@ import Google from "../images/google (1).png";
 import trust from "../images/trustpilot.png";
 import manifest from "../images/themanifest.png";
 import shopify from "../images/shopify.png";
-import Services from "../Services/Services";
+import Services from "../Serviceshome/Services";
 import WhyChoose from "../Whychoose/Whychoose";
 import ReviewsSlider from "../Reviews/Review";
 import RecentWorks from "../RecentWorks/RecentWorks";
@@ -60,7 +60,8 @@ function Home() {
       <div className="relative w-full">
         {/* Background Image */}
         <img
-          className=" top-0  w-full h-screen z-0 object-cover fixed"
+        loading="lazy"
+          className=" fixed inset-0 bg-cover bg-center -z-10 bottom-0"
           src={Fiximage}
           alt=""
         />
@@ -68,19 +69,20 @@ function Home() {
         <div className="bg-white relative z-30 flex flex-wrap lg:flex-nowrap justify-center items-center lg:gap-10 font-semibold pt-5 pb-0 lg:pt-20 lg:pb-12">
           <div className=" " data-aos="fade-up-right">
             <img
-              className="lg:h-[300px] h-[160px] lg:rotate-0 rotate-90"
+              className="lg:h-[300px] h-[130px] lg:rotate-0 rotate-90"
               src={singlelogo}
               alt=""
+              loading="lazy"
             />
           </div>
           <div
-            className="lg:max-w-[50%] w-full lg:text-start text-center p-6 "
+            className="lg:max-w-[50%] w-full lg:text-start text-center pb-6 px-4 lg:p-6 "
             data-aos="fade-down"
           >
-            <h1 className="text-3xl font-semibold mb-2 text-slate-800">
+            <h1 className="lg:text-3xl text-2xl font-semibold mb-2 text-slate-800">
               FASTEST GROWING COMPANY
             </h1>
-            <p className="" data-aos="zoom-in">
+            <p className="text-sm lg:text-base text-gray-700" data-aos="zoom-in">
               {" "}
               <span className="text-red-600">DevMotive Ltd</span> is a{" "}
               <span className="text-red-600">UK-based</span> IT and
@@ -130,11 +132,13 @@ function Home() {
           OUR FEATURED CLIENTS
         </h1>
       </div>
+      
       <div className="w-full flex justify-center relative bg-white z-30 p-4 pt-5 lg:pt-20">
         <div className="client-scroll-container relative  z-30 pt-12 shadow-md shadow-slate-200 bg-slate-50   p-2">
           <div className="client-scroll ">
             {clients.map((client, index) => (
               <img
+              loading="lazy"
                 key={index}
                 src={client}
                 alt={`client-${index}`}
@@ -147,6 +151,7 @@ function Home() {
       <div className="grid lg:grid-cols-5 grid-cols-2 lg:gap-0 gap-5  justify-items-center items-center bg-white relative z-30 pt-7 lg:pt-16 lg:px-44 pb-7 lg:pb-36">
         <div>
           <img
+          loading="lazy"
             data-aos="zoom-in-down"
             className="lg:w-32 w-20"
             src={clutch}
@@ -155,6 +160,7 @@ function Home() {
         </div>
         <div>
           <img
+          loading="lazy"
             data-aos="zoom-in-down"
             className="lg:w-44 w-24"
             src={Google}
@@ -163,6 +169,7 @@ function Home() {
         </div>
         <div>
           <img
+          loading="lazy"
             data-aos="zoom-in-up"
             className="lg:w-52 w-28"
             src={trust}
@@ -171,6 +178,7 @@ function Home() {
         </div>
         <div>
           <img
+          loading="lazy"
             data-aos="zoom-in-up"
             className="lg:w-52 w-28"
             src={manifest}
@@ -179,6 +187,7 @@ function Home() {
         </div>
         <div>
           <img
+          loading="lazy"
             data-aos="zoom-in-down"
             className="lg:w-52 w-28"
             src={shopify}

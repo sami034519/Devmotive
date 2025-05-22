@@ -37,6 +37,7 @@ function Footer() {
     {/* Image with Social Overlay */}
     <div className="relative group w-full max-w-lg" data-aos="fade-up">
       <img
+      loading="lazy"
         src={Contactimg}
         alt="Contact"
         className="w-full rounded-lg"
@@ -117,7 +118,7 @@ function Footer() {
     {/* Center Logo and Address */}
     <div className="text-center max-w-md">
       <Link to="/">
-        <img className="h-24 mx-auto mb-4" src={logo} alt="DevMotive Logo" />
+        <img className="h-24 mx-auto mb-4" src={logo} alt="DevMotive Logo" loading="lazy"/>
       </Link>
       <p>© 2025 DEVMOTIVE. All Rights Reserved.</p>
       <p>123 Baker Street, London W1U 6RS, United Kingdom</p>

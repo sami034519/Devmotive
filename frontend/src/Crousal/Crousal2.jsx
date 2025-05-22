@@ -18,7 +18,7 @@ function Crousal2({ active }) {
   return (
     <div className="relative lg:h-[80vh] w-full overflow-hidden z-30">
       {/* Background Image */}
-      <img src={background} alt="Background" className="w-full h-[200px] lg:h-[80vh] object-cover" />
+      <img src={background} alt="Background" className="w-full h-[200px] lg:h-[80vh] object-cover" loading="lazy" />
 
       {/* Overlay Content */}
       <div className="absolute inset-0 flex items-center justify-around lg:px-12 px-1">
@@ -59,8 +59,9 @@ function Crousal2({ active }) {
         {/* Right Mobile Image */}
         <img
           src={mobile}
+          loading="lazy"
           alt="Mobile"
-          className={`lg:h-[800px] h-52 transition-all duration-1000 ease-out ${
+          className={`lg:h-[750px] h-52 transition-all duration-1000 ease-out ${
             animate ? 'translate-y-0 opacity-100 animate__animated animate__backInUp' : 'translate-y-20 opacity-0'
           }`}
         />
