@@ -73,9 +73,9 @@ function Services() {
 
         {/* service button */}
         <div className="w-full flex justify-center items-start pt-10 pb-14">
-  <div className="bg-red-700 pt-1 hover:scale-110 transition-transform duration-300" data-aos="flip-left">
+  <div className="bg-red-700 pt-1 hover:scale-110 transition-transform duration-300 rounded-full" data-aos="flip-left">
     <Link to="/services">
-      <button className="bg-red-600 text-white font-medium text-xl px-6 py-2 lg:px-10 lg:py-3">
+      <button className="bg-red-600 text-white font-medium text-xl px-6 py-2 lg:px-10 lg:py-3 rounded-full">
         FIND MORE SERVICES
       </button>
     </Link>

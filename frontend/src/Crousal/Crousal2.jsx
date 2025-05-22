@@ -47,10 +47,10 @@ function Crousal2({ active }) {
             At DevMotives, we specialize in crafting powerful, intuitive, and user-centric mobile applications that bring your vision to life.
           </p>
 
-          <div className={`bg-red-700 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5 lg:mt-20 ${
+          <div className={`bg-red-700 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5 lg:mt-20 rounded-full ${
             animate ? 'animate__animated animate__backInUp animate__delay-3s' : ''
           }`}>
-            <button className="bg-red-600 text-white text-sm lg:text-2xl lg:px-6 py-1 lg:py-2 w-full lg:h-12">
+            <button className="bg-red-600 text-white text-sm lg:text-2xl lg:px-6 py-1 lg:py-2 w-full lg:h-12 rounded-full">
               READ MORE
             </button>
           </div>
