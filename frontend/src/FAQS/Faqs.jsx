@@ -58,6 +58,7 @@ const FaqSection = () => {
             <div
               key={index}
               className="border border-gray-300 rounded-lg overflow-hidden shadow-md bg-white"
+              data-aos="zoom-in-down"
             >
               <button
                 onClick={() => toggleFaq(index)}

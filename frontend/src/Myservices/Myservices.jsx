@@ -23,6 +23,7 @@ import Google from "../images/google (1).png";
 import trust from "../images/trustpilot.png";
 import manifest from "../images/themanifest.png";
 import shopify from "../images/shopify.png";
+import Howwork from "../images/Howwe work.webp"
 
 // Icons
 
@@ -229,7 +230,7 @@ function Myservices() {
       </div>
 
       {/* Services Section */}
-    <div className="bg-gray-100 py-20 px-4 sm:px-10">
+    <div className="bg-gray-100 lg:py-20 px-4 sm:px-10">
       {services.map((section, index) => (
         <div key={index} className="mb-16">
           <h2 className="text-2xl font-semibold text-red-600 mb-8">
@@ -261,10 +262,22 @@ function Myservices() {
         </div>
       ))}
     </div>
+    {/* how we work  */}
+       <div className="w-full flex lg:flex-row flex-col justify-center items-center lg:gap-10 lg:p-10 overflow-hidden">
+        <div>
+          <img className="lg:w-[700px] w-80 rounded-2xl" src={Howwork} loading="lazy" data-aos="zoom-in" alt="" />
+        </div>
+        <div className="lg:max-w-[700px] max-w-80  flex flex-col gap-y-7">
+          <h1 className="lg:text-4xl text-2xl font-bold text-gray-700" data-aos="fade-left">HOW WE WORK</h1>
+         <p data-aos="fade-left">At the core of our process is understanding our clients' goals and challenges. We begin each project with detailed consultations to gather requirements, define the project scope, and understand the target audience. This helps us create customized solutions that truly align with the business objectives of our clients.</p>
+         <p data-aos="fade-left">Once we have a clear understanding of the project, our team develops a strategic plan. This includes creating user journeys, defining technical architecture, and identifying the best tools and technologies. We ensure transparency by sharing timelines, milestones, and communication processes with our clients.</p>
+         <p data-aos="fade-left">We follow an agile development methodology, allowing us to deliver work in small, manageable phases. This approach ensures flexibility, faster feedback, and continuous improvement. Our team of skilled developers, designers, and QA professionals work in collaboration to bring high-quality software to life.</p>
+        </div>
+       </div>
     {/* FAQS */}
-    <FaqSection/>
+    <FaqSection />
     {/* clients section */}
-    <div className="w-full flex justify-center text-gray-700 text-4xl font-bold pt-12">OUR TRUSTED CLIENTS</div>
+    <div className="w-full flex justify-center text-gray-700 text-2xl lg:text-4xl font-bold pt-12">OUR TRUSTED CLIENTS</div>
     <div className="w-full flex justify-center relative bg-white z-30 p-4 pt-5 lg:pt-20">
            <div className="client-scroll-container relative  z-30 pt-12 shadow-md shadow-slate-200 bg-slate-50   p-2">
              <div className="client-scroll ">
