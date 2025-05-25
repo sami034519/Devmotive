@@ -122,7 +122,7 @@ useEffect(() => {
             <FaWhatsapp />
           </a>
           <button className=" lg:font-medium text-white lg:text-[13px] leading-[36px] bg-red-600 px-3 py-1  hover:bg-green-600 rounded-lg">
-            GET FREE QUOTE
+             Free Quote
           </button>
         </div>
       </div>
