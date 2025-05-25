@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import HeroCarousel from "../Crousal/Main";
 import Fiximage from "../images/elexoft-apps-min.png";
 import singlelogo from "../images/singlelogof-.png";
+import Technologies from "../Technologies/Technologies";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Home.css";
@@ -61,7 +62,7 @@ function Home() {
         {/* Background Image */}
         <img
         loading="lazy"
-          className=" fixed inset-0 bg-cover bg-center -z-10 bottom-0"
+          className=" fixed inset-0  -z-10 bottom-0"
           src={Fiximage}
           alt=""
         />
@@ -198,6 +199,7 @@ function Home() {
 
       <ReviewsSlider />
       <RecentWorks/>
+      <Technologies/>
     </>
   );
 }

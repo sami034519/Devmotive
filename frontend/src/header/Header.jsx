@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   FaPhoneAlt,
   FaWhatsapp,
@@ -18,6 +18,26 @@ import { NavLink, Link } from "react-router-dom";
 import logo from "../images/devmotivelogoupdate.png";
 
 function Header() {
+ 
+useEffect(() => {
+  const handleScroll = () => {
+    const topbar = document.getElementById("topbar");
+    if (!topbar) return;
+
+    if (window.scrollY > 50) {
+      topbar.style.display = "none";
+    } else {
+      topbar.style.display = "flex";
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  // Clean up the event listener on component unmount
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
   const [menuOpen, setMenuOpen] = useState(false);
   const [showServicesMenu, setShowServicesMenu] = useState(false);
 
@@ -67,7 +87,7 @@ function Header() {
     <>
     <div className="fixed top-0 left-0 w-full z-50">
       {/* === Top Bar === */}
-      <div className="bg-gray-800 text-white text-sm px-4 flex justify-between lg:justify-around items-center py-2 z-40">
+      <div id="topbar" className=" bg-gray-800 text-white text-sm px-4 flex justify-between lg:justify-around items-center py-2 z-40">
         {/* Left Side */}
         <div className="lg:flex hidden items-center space-x-4">
           <div className="flex items-center gap-1 border-r-2 border-white pr-3">
@@ -86,29 +106,29 @@ function Header() {
 
         {/* Right Side */}
         <div className="flex items-center space-x-3">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:bg-blue-500 border-2 hover:rounded-full border-white p-1">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:bg-blue-500 border-2 hover:rounded-full text-base border-white p-1 rounded-lg">
             <FaFacebookF />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:bg-blue-400 border-2 hover:rounded-full border-white p-1">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:bg-blue-400 border-2 hover:rounded-full border-white p-1 text-base rounded-lg">
             <FaTwitter />
           </a>
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="hover:bg-red-500 border-2 hover:rounded-full border-white p-1">
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer" className="hover:bg-red-500 border-2 hover:rounded-full border-white p-1 text-base rounded-lg">
             <FcGoogle />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:bg-blue-600 border-2 hover:rounded-full border-white p-1">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:bg-blue-600 border-2 hover:rounded-full border-white p-1 text-base rounded-lg">
             <FaLinkedinIn />
           </a>
-          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:bg-green-500 hover:rounded-full border-2 border-white p-1">
+          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:bg-green-500 hover:rounded-full border-2 border-white p-1 text-base rounded-lg">
             <FaWhatsapp />
           </a>
-          <button className="font-medium text-white text-[13px] leading-[36px] bg-red-600 px-3  hover:bg-green-600 rounded-full">
-            Get a Free Quote
+          <button className=" lg:font-medium text-white lg:text-[13px] leading-[36px] bg-red-600 px-3 py-1  hover:bg-green-600 rounded-lg">
+            GET FREE QUOTE
           </button>
         </div>
       </div>
 
       {/* === Menu Bar === */}
-      <div className="bg-white shadow-md z-40 relative">
+      <div className="bg-white shadow-md z-40 relative ">
         <div className="flex lg:justify-around justify-between items-center px-4 lg:px-16 py-4">
           {/* Logo */}
           <Link to="/">

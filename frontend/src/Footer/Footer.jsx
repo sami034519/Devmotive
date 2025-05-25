@@ -27,7 +27,7 @@ function Footer() {
   <div className="relative z-30 bg-gradient-to-r from-white to-slate-300 w-full px-4 py-10 overflow-hidden">
   {/* Heading */}
   <div className="w-full flex justify-center pb-10">
-    <h1 className="text-4xl font-medium text-center" data-aos="fade-down">
+    <h1 className="text-4xl font-medium text-center text-gray-800" data-aos="fade-down">
       FEEL <span className="text-red-600">FREE TO </span>CONTACT
     </h1>
   </div>
