@@ -5,6 +5,7 @@ import Footer from "./Footer/Footer";
 import SoftwareDevelopment from "./SoftwareDevelopmentService/SoftwareDevelopment";
 import Home from "./Home/Home";
 import Myservices from "./Myservices/Myservices";
+import Cloud from "./Cloud&DevopsService/Cloud";
 function App() {
   return (
     <Router>
@@ -17,6 +18,8 @@ function App() {
         <Route path="/services" element={<Myservices/>} />
 
         <Route path="/services/software-development" element={<SoftwareDevelopment />} />
+         <Route path="/services/cloud-devops" element={<Cloud />} />
+
 
       </Routes>
       <Footer />

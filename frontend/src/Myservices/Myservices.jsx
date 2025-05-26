@@ -243,13 +243,14 @@ function Myservices() {
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {section.subServices.map((sub, idx) => (
                 <Link
-                  key={idx}
-                  to={`/services/${section.title
-                    .toLowerCase()
-                    .replace(/[\s()/]+/g, "-")}`}
-                  data-aos="fade-up"
-                  className="bg-white p-6 rounded-xl shadow-md hover:shadow-red-500 transition-shadow duration-300 flex flex-col gap-2"
-                >
+  key={idx}
+  to={`/services/${section.title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "")}`}
+  data-aos="fade-up"
+  className="bg-white p-6 rounded-xl shadow-md hover:shadow-red-500 transition-shadow duration-300 flex flex-col gap-2"
+>
                   <div className="flex items-center gap-3">
                     <div className="text-2xl text-red-600">
                       {iconMap[sub.name] || <FaCode />}

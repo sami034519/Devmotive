@@ -121,7 +121,7 @@ useEffect(() => {
           <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="hover:bg-green-500 hover:rounded-full border-2 border-white p-1 text-base rounded-lg">
             <FaWhatsapp />
           </a>
-          <button className=" text-nowrap lg:font-medium text-white lg:text-[13px] leading-[36px] bg-red-600 px-3 py-1  hover:bg-green-600 rounded-lg">
+          <button className=" text-nowrap lg:font-medium text-white lg:text-[13px] leading-[36px] bg-red-600 px-3   hover:bg-green-600 rounded-lg">
              FREE QUOTE
           </button>
         </div>
