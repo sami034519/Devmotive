@@ -16,7 +16,7 @@ const HeroCarousel = () => {
       autoplay={{ delay: 5000 }}
       pagination={{ clickable: true }}
       loop={true}
-      className="w-full lg:h-[80vh] h-[200px] relative z-30 lg:mt-32 mt-32"
+      className="w-full lg:h-[80vh] h-[200px] relative z-30 lg:mt-32 mt-28"
     >
       <SwiperSlide>
         {({ isActive }) => <Crousal1 active={isActive} />}
