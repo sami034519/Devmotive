@@ -1,13 +1,13 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
-import Crousal1 from './Crousal1';
-import Crousal2 from './Crousal2';
-import Crousal3 from './Crousal3';
-import Crousal4 from './Crousal4';
+import Crousal1 from "./Crousal1";
+import Crousal2 from "./Crousal2";
+import Crousal3 from "./Crousal3";
+import Crousal4 from "./Crousal4";
 
 const HeroCarousel = () => {
   return (

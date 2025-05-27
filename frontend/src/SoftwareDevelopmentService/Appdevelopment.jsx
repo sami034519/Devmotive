@@ -34,7 +34,7 @@ function Appdevelopment() {
         </div>
         <div className="w-full flex justify-start items-center py-3 lg:py-6 lg:pl-28 overflow-hidden ">
           <p
-            className="lg:max-w-[80%] text-start leading-5"
+            className="lg:max-w-[80%] text-start leading-5 lg:text-base text-sm"
             data-aos="fade-left"
           >
             At DevMotive, we build high-performance mobile and web applications
@@ -57,7 +57,7 @@ function Appdevelopment() {
         </div>
         <div className="w-full flex justify-start items-center py-3 lg:py-6 lg:pl-28 overflow-hidden ">
           <p
-            className="lg:max-w-[80%] text-start leading-5"
+            className="lg:max-w-[80%] text-start leading-5 lg:text-base text-sm"
             data-aos="fade-left"
           >
             At DevMotive, we pride ourselves on delivering cutting-edge app

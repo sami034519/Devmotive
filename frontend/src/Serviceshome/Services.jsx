@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import webimg from "../images/web-development.jpg";
 import mobile from "../images/mobile-app-dev-min.jpg";
@@ -36,15 +36,51 @@ function Services() {
         {/* Services cards */}
         <div className="grid lg:grid-cols-3 grid-cols-1 justify-items-center gap-x-4 lg:pt-20 lg:px-56 gap-y-5">
           {[
-            { img: webimg, title: "WEB DEVELOPMENT", path: "/services/software-development" },
-            { img: mobile, title: "MOBILE APP DEVELOPMENT", path: "/services/software-development" },
-            { img: SAAS, title: "SAAS APPLICATION DEVELOPMENT", path: "/services/saas-development" },
-            { img: security, title: "CYBER SECURITY SOLUTIONS", path: "/services/cyber-security" },
-            { img: webimg, title: "NETWORK SECURITY", path: "/services/network-security" },
-            { img: account, title: "FINANCE AND ACCOUNTING", path: "/services/finance-accounting" },
-            { img: devops, title: "CLOUD AND DEVOPS", path: "/services/cloud-devops" },
-            { img: salarysheet, title: "MONTHLY SALARY SHEET", path: "/services/salary-sheet" },
-            { img: consulting, title: "IT CONSULTING", path: "/services/it-consulting" }
+            {
+              img: webimg,
+              title: "WEB DEVELOPMENT",
+              path: "/services/software-development",
+            },
+            {
+              img: mobile,
+              title: "MOBILE APP DEVELOPMENT",
+              path: "/services/software-development",
+            },
+            {
+              img: SAAS,
+              title: "SAAS APPLICATION DEVELOPMENT",
+              path: "/services/saas-development",
+            },
+            {
+              img: security,
+              title: "CYBER SECURITY SOLUTIONS",
+              path: "/services/cyber-security",
+            },
+            {
+              img: webimg,
+              title: "NETWORK SECURITY",
+              path: "/services/network-security",
+            },
+            {
+              img: account,
+              title: "FINANCE AND ACCOUNTING",
+              path: "/services/finance-accounting",
+            },
+            {
+              img: devops,
+              title: "CLOUD AND DEVOPS",
+              path: "/services/cloud-devops",
+            },
+            {
+              img: salarysheet,
+              title: "MONTHLY SALARY SHEET",
+              path: "/services/salary-sheet",
+            },
+            {
+              img: consulting,
+              title: "IT CONSULTING",
+              path: "/services/it-consulting",
+            },
           ].map((card, i) => (
             <Link
               key={i}
@@ -73,14 +109,17 @@ function Services() {
 
         {/* service button */}
         <div className="w-full flex justify-center items-start pt-10 pb-14">
-  <div className="bg-red-700 pt-1 hover:scale-110 transition-transform duration-300 rounded-lg" data-aos="flip-left">
-    <Link to="/services">
-      <button className="bg-red-600 text-white font-medium text-xl px-6 py-2 lg:px-10 lg:py-3 rounded-lg">
-        FIND MORE SERVICES
-      </button>
-    </Link>
-  </div>
-</div>
+          <div
+            className="bg-red-700 pt-1 hover:scale-110 transition-transform duration-300 rounded-lg"
+            data-aos="flip-left"
+          >
+            <Link to="/services">
+              <button className="bg-red-600 text-white font-medium text-xl px-6 py-2 lg:px-10 lg:py-3 rounded-lg">
+                FIND MORE SERVICES
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );
