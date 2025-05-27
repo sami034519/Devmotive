@@ -38,7 +38,7 @@ function Cloud() {
           </h1>
 
           <h2 className=" text-xl lg:text-4xl font-semibold mt-3 animate__animated animate__fadeInLeft animate__delay-1s">
-            Scalable, Secure & Cost-Efficient.
+            Scalable & Secure.
           </h2>
 
           <p className=" text-sm lg:text-lg lg:max-w-xl max-w-64 mt-3 animate__animated animate__fadeInLeft animate__delay-2s">
