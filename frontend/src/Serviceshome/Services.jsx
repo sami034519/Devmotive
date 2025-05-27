@@ -36,8 +36,8 @@ function Services() {
         {/* Services cards */}
         <div className="grid lg:grid-cols-3 grid-cols-1 justify-items-center gap-x-4 lg:pt-20 lg:px-56 gap-y-5">
           {[
-            { img: webimg, title: "WEB DEVELOPMENT", path: "/services/web-development" },
-            { img: mobile, title: "MOBILE APP DEVELOPMENT", path: "/services/mobile-app-development" },
+            { img: webimg, title: "WEB DEVELOPMENT", path: "/services/software-development" },
+            { img: mobile, title: "MOBILE APP DEVELOPMENT", path: "/services/software-development" },
             { img: SAAS, title: "SAAS APPLICATION DEVELOPMENT", path: "/services/saas-development" },
             { img: security, title: "CYBER SECURITY SOLUTIONS", path: "/services/cyber-security" },
             { img: webimg, title: "NETWORK SECURITY", path: "/services/network-security" },
