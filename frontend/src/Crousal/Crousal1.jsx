@@ -30,7 +30,7 @@ function Crousal1({ active }) {
 
       {/* Overlay Div */}
       <div
-        className={`absolute lg:w-[60%] w-[70%] top-0 left-0 h-[200px] lg:h-[80vh] pt-4 bg-red-600 bg-opacity-80 transition-all duration-1000 ${
+        className={`absolute lg:w-[60%] w-[70%] top-0 left-0 h-[200px] lg:h-[80vh] bg-red-600 bg-opacity-80 transition-all duration-1000 ${
           animate ? "animate__animated animate__backInLeft w-1/2" : "w-0"
         }`}
         style={{
@@ -40,7 +40,7 @@ function Crousal1({ active }) {
 
       {/* Text Content */}
       <div
-        className={`absolute top-24 lg:top-[200px] left-10 transform -translate-y-1/2 text-white transition-all duration-1000 ${
+        className={`absolute top-28 lg:top-[200px] left-10 transform -translate-y-1/2 text-white transition-all duration-1000 ${
           animate ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
         }`}
       >
