@@ -6,6 +6,7 @@ import SoftwareDevelopment from "./SoftwareDevelopmentService/SoftwareDevelopmen
 import Home from "./Home/Home";
 import Myservices from "./Myservices/Myservices";
 import Cloud from "./Cloud&DevopsService/Cloud";
+import Cybersecurity from "./Cybersecurity/Cybersecurity";
 function App() {
   return (
     <Router>
@@ -19,6 +20,7 @@ function App() {
 
         <Route path="/services/software-development" element={<SoftwareDevelopment />} />
          <Route path="/services/cloud-devops" element={<Cloud />} />
+         <Route path="/services/cybersecurity" element={<Cybersecurity />} />
 
 
       </Routes>

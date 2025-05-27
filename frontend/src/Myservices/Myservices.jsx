@@ -90,7 +90,7 @@ const services = [
     ],
   },
   {
-    title: "Cybersecurity Solutions",
+    title: "Cybersecurity",
     subServices: [
       {
         name: "Vulnerability Assessment & Penetration Testing",
