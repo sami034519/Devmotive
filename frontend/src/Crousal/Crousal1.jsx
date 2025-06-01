@@ -70,8 +70,8 @@ function Crousal1({ active }) {
           }`}
         >
           At DevMotives, we are driven by a passion for building innovative,
-          reliable, and scalable software solutions that empower businesses to
-          thrive in the digital era.
+          reliable, and scalable <span className="lg:block hidden">software solutions that empower businesses to
+          thrive in the digital era.</span> 
         </p>
       </div>
     </div>

@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Threat from "../images/THREAT.png";
 import Networksecurity from "../images/networksecurity.png";
 import penetrate from "../images/nlp.png";
+import deployment from "../images/deployment1-min (1).png"
 import ReviewsSlider from "../Reviews/Review";
 <i></i>;
 
@@ -29,7 +30,7 @@ function Cybersecurity() {
         />
 
         {/* Text Overlay */}
-        <div className="absolute inset-0 flex flex-col items-start justify-center px-1 lg:px-16">
+        <div className="absolute inset-0 flex lg:max-w-full max-w-60 flex-col items-start justify-center px-1 lg:px-16">
           <h1 className="text-red-600 text-3xl lg:text-6xl font-bold animate__animated animate__fadeInDown">
             Cybersecurity Services
           </h1>
@@ -38,14 +39,18 @@ function Cybersecurity() {
             Secure and Trustworthy
           </h2>
 
-          <p className=" text-sm lg:text-lg lg:max-w-xl max-w-64 mt-3 animate__animated animate__fadeInLeft animate__delay-2s">
+          <p className=" hidden lg:block  text-sm lg:text-lg lg:max-w-xl max-w-64 mt-3 animate__animated animate__fadeInLeft animate__delay-2s">
             At DevMotive, we deliver reliable, scalable cybersecurity solutions
             designed to protect your business.
           </p>
 
-          <button className="mt-5 px-6 py-2 bg-red-600 text-white  text-sm lg:text-lg animate__animated animate__fadeInUp animate__delay-3s rounded-lg">
-            READ MORE
-          </button>
+            <div className={`bg-red-700 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5 lg:mt-20 rounded-lg 
+             animate__animated animate__backInUp animate__delay-2s pt-1
+          `}>
+            <button className="bg-red-600 text-white lg:text-2xl lg:px-6 py-1 lg:py-2 w-full lg:h-12 rounded-lg">
+              READ MORE
+            </button>
+          </div>
         </div>
       </div>
 
@@ -187,7 +192,7 @@ function Cybersecurity() {
         <div>
           <img
             className="max-w-56"
-            src={Networksecurity}
+            src={deployment}
             data-aos="zoom-in-up"
             alt=""
           />

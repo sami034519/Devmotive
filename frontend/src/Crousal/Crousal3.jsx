@@ -48,11 +48,11 @@ function Crousal3({ active }) {
           <p className={`lg:text-lg text-xs lg:w-[500px] w-56 mt-2 text-black ${
             animate ? "animate__animated animate__lightSpeedInLeft animate__delay-2s" : ""
           }`}>
-            At DevMotives, we specialize in crafting powerful, intuitive, and user-centric web applications that bring your vision to life.
+            At DevMotives, we specialize in crafting powerful, intuitive, and user-centric web applications <span className="lg:block hidden">that bring your vision to life.</span> 
           </p>
 
           {/* Button */}
-          <div className={`bg-red-700 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5 lg:mt-20 rounded-lg ${
+          <div className={`bg-red-700 pt-1 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5 lg:mt-20 rounded-lg ${
             animate ? "animate__animated animate__backInUp animate__delay-3s" : ""
           }`}>
             <button className="bg-red-600 text-white lg:text-2xl lg:px-6 py-1 lg:py-2 w-full lg:h-12 rounded-lg">

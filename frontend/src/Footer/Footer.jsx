@@ -35,9 +35,10 @@ function Footer() {
   {/* Contact Area */}
   <div className="flex flex-col lg:flex-row items-center justify-center gap-10 max-w-screen-xl mx-auto">
     {/* Image with Social Overlay */}
-    <div className="relative group w-full max-w-lg" data-aos="fade-up">
+    <div className="relative group w-full max-w-lg" >
       <img
       loading="lazy"
+      data-aos="fade-up"
         src={Contactimg}
         alt="Contact"
         className="w-full rounded-lg"

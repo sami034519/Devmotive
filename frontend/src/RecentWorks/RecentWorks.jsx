@@ -30,12 +30,13 @@ function RecentWorks() {
         <div className="bg-white relative z-30 grid grid-cols-1 lg:grid-cols-3 gap-5 justify-items-center items-center px-3 lg:px-40 py-14">
           <div
             className="relative lg:w-96 w-72 h-72 overflow-hidden rounded-lg cursor-pointer group"
-            data-aos="zoom-in-up"
+            
           >
             <img
               loading="lazy"
               src={ecommerce}
               alt="E-Commerce Project"
+             data-aos="flip-left"
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-125"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -47,12 +48,13 @@ function RecentWorks() {
 
           <div
             className="relative lg:w-96 w-72 h-72 overflow-hidden rounded-lg cursor-pointer group"
-            data-aos="zoom-in-up"
+            
           >
             <img
               loading="lazy"
               src={saas}
               alt="SaaS Project"
+              data-aos="flip-left"
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-125"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -64,10 +66,11 @@ function RecentWorks() {
 
           <div
             className="relative lg:w-96 w-72 h-72 overflow-hidden rounded-lg cursor-pointer group"
-            data-aos="zoom-in-up"
+           
           >
             <img
               loading="lazy"
+               data-aos="flip-left"
               src={cybersecurity}
               alt="Cybersecurity Project"
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-125"
@@ -81,10 +84,11 @@ function RecentWorks() {
 
           <div
             className="relative lg:w-96 w-72 h-72 overflow-hidden rounded-lg cursor-pointer group"
-            data-aos="zoom-in-up"
+            
           >
             <img
               loading="lazy"
+              data-aos="flip-left"
               src={Business}
               alt="Business Digitalization"
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-125"
@@ -98,9 +102,10 @@ function RecentWorks() {
 
           <div
             className="relative lg:w-96 w-72 h-72 overflow-hidden rounded-lg cursor-pointer group"
-            data-aos="zoom-in-up"
+            
           >
             <img
+           data-aos="flip-left"
               loading="lazy"
               src={Cloud}
               alt="Cloud Migration"
@@ -115,10 +120,11 @@ function RecentWorks() {
 
           <div
             className="relative lg:w-96 w-72 h-72 overflow-hidden rounded-lg cursor-pointer group"
-            data-aos="zoom-in-up"
+           
           >
             <img
               loading="lazy"
+               data-aos="flip-left"
               src={mobile}
               alt="Mobile App Project"
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-125 bg-blue-600"

@@ -208,7 +208,7 @@ function Myservices() {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative w-full lg:h-[80vh] h-[300px] overflow-hidden mt-12">
+      <div className="relative w-full lg:h-[80vh] h-[300px]  mt-12">
         <img
           loading="lazy"
           src={background}
@@ -226,9 +226,13 @@ function Myservices() {
             At DevMotives, we craft user-friendly, scalable software to help
             your business grow.
           </p>
-          <button className="mt-5 px-6 py-2 bg-red-600 text-white text-sm lg:text-lg animate__animated animate__fadeInUp animate__delay-3s rounded-lg ">
-            READ MORE
-          </button>
+         <div className={`bg-red-700 pt-1 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5 lg:mt-20 rounded-lg 
+             animate__animated animate__backInUp animate__delay-2s
+          `}>
+            <button className="bg-red-600 text-white lg:text-2xl lg:px-6 py-1 lg:py-2 w-full lg:h-12 rounded-lg">
+              READ MORE
+            </button>
+          </div>
         </div>
       </div>
 

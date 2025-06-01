@@ -34,7 +34,7 @@ function Crousal2({ active }) {
           }`}
         >
           <h1
-            className={`lg:text-[70px] text-xl font-semibold text-red-600 whitespace-nowrap ${
+            className={`lg:text-[70px] text-xl font-semibold text-red-600 whitespace-nowrap pt-2 ${
               animate
                 ? "animate__animated animate__fadeInDownBig animate__delay-1s"
                 : ""
@@ -61,17 +61,13 @@ function Crousal2({ active }) {
             }`}
           >
             At DevMotives, we specialize in crafting powerful, intuitive, and
-            user-centric mobile applications that bring your vision to life.
+            user-centric mobile applications <span className="lg:block hidden"> that bring your vision to life.</span>
           </p>
 
-          <div
-            className={`bg-red-700 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5 lg:mt-20 rounded-lg ${
-              animate
-                ? "animate__animated animate__backInUp animate__delay-3s"
-                : ""
-            }`}
-          >
-            <button className="bg-red-600 text-white text-sm lg:text-2xl lg:px-6 py-1 lg:py-2 w-full lg:h-12 rounded-lg">
+         <div className={`bg-red-700 pt-1 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5 lg:mt-20 rounded-lg ${
+            animate ? "animate__animated animate__backInUp animate__delay-3s" : ""
+          }`}>
+            <button className="bg-red-600 text-white lg:text-2xl lg:px-6 py-1 lg:py-2 w-full lg:h-12 rounded-lg">
               READ MORE
             </button>
           </div>
