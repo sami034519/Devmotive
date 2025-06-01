@@ -136,7 +136,7 @@ function Header() {
           className="bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg"
           title="Chat on WhatsApp"
         >
-          <FaWhatsapp size={60} />
+          <FaWhatsapp size={50} />
         </button>
       </div>
 
