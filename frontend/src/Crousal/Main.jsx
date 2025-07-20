@@ -13,7 +13,7 @@ const HeroCarousel = () => {
   return (
     <Swiper
       modules={[Autoplay, Pagination]}
-      autoplay={{ delay: 5000 }}
+      autoplay={{ delay: 6000 }}
       pagination={{ clickable: true }}
       loop={true}
       className="w-full lg:h-[80vh] h-[200px] relative z-30 lg:mt-32 mt-28"

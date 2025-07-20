@@ -1,10 +1,10 @@
 import React from "react";
-import ecommerce from "../images/ecommerce.jpg";
-import saas from "../images/Saasf.jpg";
-import cybersecurity from "../images/cybersecurity.jpg";
-import Business from "../images/business.jpg";
-import Cloud from "../images/cloud.jpg";
-import mobile from "../images/mob2.png";
+import ecommerce from "../../images/ecommerce.jpg";
+import saas from "../../images/Saasf.jpg";
+import cybersecurity from "../../images/cybersecurity.jpg";
+import Business from "../../images/business.jpg";
+import Cloud from "../../images/cloud.jpg";
+import mobile from "../../images/mob2.png";
 
 function RecentWorks() {
   return (

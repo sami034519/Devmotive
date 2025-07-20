@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
-import background from "../images/bg5.png";
+import background from "../../images/bg5.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Reports from "../images/reports.png";
-import Compliance from "../images/complaince.png";
-import Automation from "../images/automation.gif";
-import Strategy from "../images/strategy.gif";
-import salarysheet from "../images/SALARYSHEET.jpg";
- import taxreturn  from "../images/taxreturnf.jpg"
- import accountprepare from "../images/financial_stmt.jpg"
+import Reports from "../../images/reports.png";
+import Compliance from "../../images/complaince.png";
+import Automation from "../../images/automation.gif";
+import Strategy from "../../images/strategy.gif";
+import salarysheet from "../../images/SALARYSHEET.jpg";
+ import taxreturn  from "../../images/taxreturnf.jpg"
+ import accountprepare from "../../images/financial_stmt.jpg"
 import ReviewsSlider from "../Reviews/Review";
 
 function Finance() {
@@ -39,8 +39,8 @@ function Finance() {
           <p className="hidden lg:block text-sm lg:text-lg lg:max-w-xl max-w-64 mt-3 animate__animated animate__fadeInLeft animate__delay-2s">
             Explore expert finance and accounting services tailored for SMEs and enterprises. Powered by ACCA-certified professionals.
           </p>
-          <div className="bg-red-700 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5 lg:mt-20 rounded-lg animate__animated animate__backInUp animate__delay-2s pt-1">
-            <button className="bg-red-600 text-white lg:text-2xl lg:px-6 py-1 lg:py-2 w-full lg:h-12 rounded-lg">
+          <div className="bg-red-700 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5 lg:mt-20 rounded animate__animated animate__backInUp animate__delay-2s pt-1">
+            <button className="bg-red-600 text-white lg:text-2xl lg:px-6 py-1 lg:py-2 w-full lg:h-12 rounded">
               READ MORE
             </button>
           </div>

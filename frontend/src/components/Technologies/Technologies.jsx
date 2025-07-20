@@ -2,16 +2,16 @@ import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import circles from "../images/circles.svg";
-import angular from "../images/angular.png";
-import c1 from "../images/C-1.png";
-import html from "../images/html (1).png";
-import js from "../images/js.jpg";
-import larval from "../images/laravel-.png";
-import mysql from "../images/my-sql.png";
-import php from "../images/PHP-logo.svg.png";
-import python from "../images/python1.png";
-import reactnative from "../images/react-native.png";
+import circles from "../../images/circles.svg";
+import angular from "../../images/angular.png";
+import c1 from "../../images/C-1.png";
+import html from "../../images/html (1).png";
+import js from "../../images/js.jpg";
+import larval from "../../images/laravel-.png";
+import mysql from "../../images/my-sql.png";
+import php from "../../images/PHP-logo.svg.png";
+import python from "../../images/python1.png";
+import reactnative from "../../images/react-native.png";
 function Technologies() {
   useEffect(() => {
       AOS.init({

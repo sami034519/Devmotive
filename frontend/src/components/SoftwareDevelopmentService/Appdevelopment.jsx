@@ -2,21 +2,21 @@ import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import web1 from "../images/web1.jpg";
-import web2 from "../images/web2.png";
-import web3 from "../images/web3.jpg";
+import web1 from "../../images/mob1.png";
+import web2 from "../../images/mob2.jpg";
+import web3 from "../../images/mob3.jpg";
 import Technologies from "../Technologies/Technologies";
 import {
   FaRocket,
   FaMobileAlt,
-  FaLock,
-  FaChartLine,
   FaCogs,
-  FaUserFriends,
+  FaShieldAlt,
+  FaChartPie,
+  FaHeadset,
 } from "react-icons/fa";
 import Reviews from "../Reviews/Review";
 
-function Webdevelopment() {
+function Appdevelopment() {
   useEffect(() => {
     AOS.init({
       duration: 1000, // animation duration (ms)
@@ -29,31 +29,29 @@ function Webdevelopment() {
       <div className="text-gray-600 lg:pt-10">
         <div className="w-full flex justify-start items-center lg:pl-28 overflow-hidden ">
           <h1 className="lg:text-3xl font-medium w-full" data-aos="fade-right">
-            WEBSITE <span className="text-red-600">DEVELOPMENT</span> BY
-            DEVMOTIVE
+            APP <span className="text-red-600">DEVELOPMENT</span> BY DEVMOTIVE
           </h1>
         </div>
         <div className="w-full flex justify-start items-center py-3 lg:py-6 lg:pl-28 overflow-hidden ">
           <p
-            className="lg:max-w-[80%] lg:text-base text-sm text-start leading-5"
+            className="lg:max-w-[80%] text-start leading-5 lg:text-base text-sm"
             data-aos="fade-left"
           >
-            At DevMotive, we craft high-performance websites tailored to your
-            brand and business goals. Whether you need a sleek landing page, a
-            dynamic business website, or a complex web portal, our expert team
-            delivers responsive, fast, and secure solutions using the latest
-            technologies. We focus on clean design, user-friendly interfaces,
-            and SEO optimization to ensure your website not only looks great—but
-            performs even better.Whether you're a startup looking for a sleek
-            landing page, an established business in need of a powerful company
-            site, or an enterprise requiring a custom web portal—we’ve got you
-            covered.
+            At DevMotive, we build high-performance mobile and web applications
+            tailored to your brand and business goals. Whether you need a sleek
+            startup app, a dynamic business application, or a complex
+            enterprise-level platform, our expert team delivers responsive,
+            fast, and secure solutions using the latest technologies. We focus
+            on clean UI/UX design, seamless user experiences, and performance
+            optimization to ensure your app not only looks great—but works
+            flawlessly. Whether you're launching your first app or expanding
+            your digital ecosystem, we’ve got you covered.
           </p>
         </div>
 
         <div className="w-full flex justify-start items-center lg:pl-28 overflow-hidden ">
           <h1 className="lg:text-3xl font-medium" data-aos="fade-right">
-            OUR <span className="text-red-600">EXPERTIES</span> IN WEB
+            OUR <span className="text-red-600">EXPERTIES</span> IN APP
             DEVELOPMENT
           </h1>
         </div>
@@ -62,21 +60,22 @@ function Webdevelopment() {
             className="lg:max-w-[80%] text-start leading-5 lg:text-base text-sm"
             data-aos="fade-left"
           >
-            At DevMotive, we pride ourselves on delivering cutting-edge web
-            development solutions that transform ideas into impactful digital
-            realities. Our team of skilled developers and designers leverage the
-            latest technologies and industry best practices to create websites
-            that are not only visually stunning but also highly functional and
-            scalable. Whether it’s building a simple business site or a complex
-            web application, we bring precision, creativity, and technical
-            excellence to every project. We specialize in crafting responsive
-            and user-centric designs that ensure seamless experiences across all
-            devices. Understanding the importance of speed, security, and SEO,
-            we optimize every aspect of your website to help you reach and
-            engage your target audience effectively. Our expertise includes
-            front-end frameworks like React and Vue, back-end technologies such
-            as Node.js and Python, and integrating powerful content management
-            systems and APIs tailored to your specific needs.
+            At DevMotive, we pride ourselves on delivering cutting-edge app
+            development solutions that transform visionary ideas into powerful,
+            user-friendly mobile and web applications. Our team of skilled
+            developers and designers leverage the latest frameworks and best
+            practices to build apps that are not only visually impressive but
+            also robust, scalable, and performance-driven. Whether it's a sleek
+            consumer-facing app or a complex enterprise platform, we approach
+            every project with creativity, precision, and technical excellence.
+            We specialize in designing intuitive user interfaces and seamless
+            user experiences that work flawlessly across iOS, Android, and
+            cross-platform environments. Recognizing the importance of speed,
+            security, and maintainability, we optimize every aspect of your
+            application to ensure it delivers value to your users and drives
+            business growth. Our expertise spans technologies like React Native,
+            Flutter, Swift, Kotlin, Node.js, Firebase, and secure API
+            integrations—tailored to meet your unique business needs.
           </p>
         </div>
         {/* web card */}
@@ -127,8 +126,8 @@ function Webdevelopment() {
                 className="lg:text-3xl font-medium text-start lg:mt-0 mt-5"
                 data-aos="fade-left"
               >
-                CRAFTING <span className="text-red-600">SMART WEB</span>{" "}
-                SOLUTIONS
+                ENGINEERING{" "}
+                <span className="text-red-600">HIGH PERFORMANCE</span> APPS
               </h1>
             </div>
             <div className="overflow-hidden ">
@@ -147,12 +146,14 @@ function Webdevelopment() {
             </div>
             <div className="pb-4">
               {" "}
+              
               <button
-                className="font-medium text-white text-sm lg:text-[16px] leading-[36px] bg-red-600 py-1 px-3  hover:bg-green-600 rounded-lg"
+                className="font-medium text-white text-sm lg:text-[16px] leading-[36px] bg-red-600 py-1 px-3  hover:bg-green-600 rounded"
                 data-aos="flip-up"
               >
                 Get a Free Quote
               </button>
+             
             </div>
           </div>
         </div>
@@ -161,40 +162,40 @@ function Webdevelopment() {
         <div className="lg:h-48"></div>
         <div className="relative bg-slate-700 py-44 overflow-visible lg:block hidden">
           {/* Top 3 Cards - Floating Up */}
-          <div className="absolute top-2  lg:-top-32 left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4 grid md:grid-cols-3 gap-8">
+          <div className="absolute top-2 lg:-top-32 left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4 grid md:grid-cols-3 gap-8">
             <div
               className="bg-white border border-slate-200 shadow-md shadow-slate-400 p-8 rounded-xl"
               data-aos="fade-up"
             >
-              <FaRocket className="text-4xl text-red-600 mb-4" />
-              <h3 className="text-2xl font-semibold mb-3">Fast Performance</h3>
+              <FaMobileAlt className="text-4xl text-red-600 mb-4" />
+              <h3 className="text-2xl font-semibold mb-3">
+                Cross-Platform Ready
+              </h3>
               <p className="text-lg text-gray-700">
-                We develop high-speed websites optimized for responsiveness and
-                fast loading. Speed matters — both for users and SEO.
+                Build once, deploy everywhere. We develop apps that run smoothly
+                across Android and iOS with a unified codebase.
               </p>
             </div>
             <div
               className="bg-white border border-slate-200 shadow-md shadow-slate-400 p-8 rounded-xl"
               data-aos="zoom-in"
             >
-              <FaMobileAlt className="text-4xl text-blue-600 mb-4" />
-              <h3 className="text-2xl font-semibold mb-3">
-                Mobile First Design
-              </h3>
+              <FaRocket className="text-4xl text-blue-600 mb-4" />
+              <h3 className="text-2xl font-semibold mb-3">High Performance</h3>
               <p className="text-lg text-gray-700">
-                Our sites are crafted to deliver flawless experiences on mobile,
-                tablet, and desktop — ensuring reach and usability.
+                Our apps are optimized for speed and responsiveness to ensure
+                seamless performance and fast loading times.
               </p>
             </div>
             <div
               className="bg-white border border-slate-200 shadow-md shadow-slate-400 p-8 rounded-xl"
               data-aos="flip-left"
             >
-              <FaLock className="text-4xl text-green-600 mb-4" />
-              <h3 className="text-2xl font-semibold mb-3">Secure by Design</h3>
+              <FaShieldAlt className="text-4xl text-green-600 mb-4" />
+              <h3 className="text-2xl font-semibold mb-3">Built-In Security</h3>
               <p className="text-lg text-gray-700">
-                With security built from the ground up, your site is protected
-                from vulnerabilities and threats right out of the box.
+                We embed security from the start — protecting user data and app
+                functionality from the ground up.
               </p>
             </div>
           </div>
@@ -205,10 +206,13 @@ function Webdevelopment() {
               className="bg-white border border-slate-200 shadow-md shadow-slate-400 p-8 rounded-xl"
               data-aos="fade-right"
             >
-              <FaChartLine className="text-4xl text-purple-600 mb-4" />
-              <h3 className="text-2xl font-semibold mb-3">SEO Optimized</h3>
+              <FaChartPie className="text-4xl text-purple-600 mb-4" />
+              <h3 className="text-2xl font-semibold mb-3">
+                Analytics Integration
+              </h3>
               <p className="text-lg text-gray-700">
-                Search engine friendly for better visibility and ranking.
+                Gain insights with real-time analytics integration to track
+                performance, engagement, and growth.
               </p>
             </div>
             <div
@@ -216,30 +220,30 @@ function Webdevelopment() {
               data-aos="fade-up"
             >
               <FaCogs className="text-4xl text-yellow-600 mb-4" />
-              <h3 className="text-2xl font-semibold mb-3">
-                Custom Functionality
-              </h3>
+              <h3 className="text-2xl font-semibold mb-3">Custom Features</h3>
               <p className="text-lg text-gray-700">
-                From booking systems to analytics dashboards, we develop
-                tailor-made tools that serve your unique business needs.
+                From e-commerce to social features, we build custom
+                functionality aligned with your business goals.
               </p>
             </div>
             <div
               className="bg-white border border-slate-200 shadow-md shadow-slate-400 p-8 rounded-xl"
               data-aos="fade-left"
             >
-              <FaUserFriends className="text-4xl text-pink-600 mb-4" />
-              <h3 className="text-2xl font-semibold mb-3">Reliable Support</h3>
+              <FaHeadset className="text-4xl text-pink-600 mb-4" />
+              <h3 className="text-2xl font-semibold mb-3">
+                Post-Launch Support
+              </h3>
               <p className="text-lg text-gray-700">
-                We provide ongoing maintenance, enhancements, and support to
-                ensure your site grows alongside your business.
+                We offer continuous support, updates, and performance monitoring
+                to keep your app running at its best.
               </p>
             </div>
           </div>
 
           {/* Center Message */}
           <div className="text-center text-white max-w-xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">KEY BENIFITS</h2>
+            <h2 className="text-3xl font-bold mb-4">KEY BENEFITS</h2>
           </div>
         </div>
         <div className="bg-slate-700 py-20 px-4 overflow-hidden lg:hidden block">
@@ -254,35 +258,35 @@ function Webdevelopment() {
               className="bg-white border border-slate-200 shadow-md shadow-slate-400 p-8 rounded-xl"
               data-aos="fade-up"
             >
-              <FaRocket className="text-4xl text-red-600 mb-4" />
-              <h3 className="text-2xl font-semibold mb-3">Fast Performance</h3>
+              <FaMobileAlt className="text-4xl text-red-600 mb-4" />
+              <h3 className="text-2xl font-semibold mb-3">
+                Cross-Platform Ready
+              </h3>
               <p className="text-lg text-gray-700">
-                We develop high-speed websites optimized for responsiveness and
-                fast loading. Speed matters — both for users and SEO.
+                We build apps that work seamlessly across Android and iOS with a
+                single codebase for faster delivery.
               </p>
             </div>
             <div
               className="bg-white border border-slate-200 shadow-md shadow-slate-400 p-8 rounded-xl"
               data-aos="zoom-in"
             >
-              <FaMobileAlt className="text-4xl text-blue-600 mb-4" />
-              <h3 className="text-2xl font-semibold mb-3">
-                Mobile First Design
-              </h3>
+              <FaRocket className="text-4xl text-blue-600 mb-4" />
+              <h3 className="text-2xl font-semibold mb-3">High Performance</h3>
               <p className="text-lg text-gray-700">
-                Our sites are crafted to deliver flawless experiences on mobile,
-                tablet, and desktop — ensuring reach and usability.
+                Our apps are designed for speed and optimized performance,
+                ensuring smooth and fast user experiences.
               </p>
             </div>
             <div
               className="bg-white border border-slate-200 shadow-md shadow-slate-400 p-8 rounded-xl"
               data-aos="flip-left"
             >
-              <FaLock className="text-4xl text-green-600 mb-4" />
-              <h3 className="text-2xl font-semibold mb-3">Secure by Design</h3>
+              <FaShieldAlt className="text-4xl text-green-600 mb-4" />
+              <h3 className="text-2xl font-semibold mb-3">Built-In Security</h3>
               <p className="text-lg text-gray-700">
-                With security built from the ground up, your site is protected
-                from vulnerabilities and threats right out of the box.
+                Security-first approach ensures user data and app operations
+                stay protected from vulnerabilities.
               </p>
             </div>
           </div>
@@ -293,10 +297,13 @@ function Webdevelopment() {
               className="bg-white border border-slate-200 shadow-md shadow-slate-400 p-8 rounded-xl"
               data-aos="fade-right"
             >
-              <FaChartLine className="text-4xl text-purple-600 mb-4" />
-              <h3 className="text-2xl font-semibold mb-3">SEO Optimized</h3>
+              <FaChartPie className="text-4xl text-purple-600 mb-4" />
+              <h3 className="text-2xl font-semibold mb-3">
+                Analytics Integration
+              </h3>
               <p className="text-lg text-gray-700">
-                Search engine friendly for better visibility and ranking.
+                Integrated tracking and analytics tools help you monitor usage,
+                retention, and conversions with precision.
               </p>
             </div>
             <div
@@ -304,23 +311,21 @@ function Webdevelopment() {
               data-aos="fade-up"
             >
               <FaCogs className="text-4xl text-yellow-600 mb-4" />
-              <h3 className="text-2xl font-semibold mb-3">
-                Custom Functionality
-              </h3>
+              <h3 className="text-2xl font-semibold mb-3">Custom Features</h3>
               <p className="text-lg text-gray-700">
-                From booking systems to analytics dashboards, we develop
-                tailor-made tools that serve your unique business needs.
+                We develop feature-rich apps customized to your exact business
+                needs — from chat to booking to payments.
               </p>
             </div>
             <div
               className="bg-white border border-slate-200 shadow-md shadow-slate-400 p-8 rounded-xl"
               data-aos="fade-left"
             >
-              <FaUserFriends className="text-4xl text-pink-600 mb-4" />
-              <h3 className="text-2xl font-semibold mb-3">Reliable Support</h3>
+              <FaHeadset className="text-4xl text-pink-600 mb-4" />
+              <h3 className="text-2xl font-semibold mb-3">Dedicated Support</h3>
               <p className="text-lg text-gray-700">
-                We provide ongoing maintenance, enhancements, and support to
-                ensure your site grows alongside your business.
+                Our team provides post-launch maintenance, updates, and support
+                to ensure your app’s long-term success.
               </p>
             </div>
           </div>
@@ -329,12 +334,11 @@ function Webdevelopment() {
         <div className="lg:h-40"></div>
 
         {/* technologies section */}
-    
       </div>
-        <Technologies/>
-        <Reviews />
+      <Technologies />
+      <Reviews />
     </>
   );
 }
 
-export default Webdevelopment;
+export default Appdevelopment;

@@ -1,12 +1,12 @@
 import React from "react";
-import background from "../images/bg5.png";
+import background from "../../images/bg5.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Threat from "../images/THREAT.png";
-import Networksecurity from "../images/networksecurity.png";
-import penetrate from "../images/nlp.png";
-import deployment from "../images/deployment1-min (1).png"
+import Threat from "../../images/THREAT.png";
+import Networksecurity from "../../images/networksecurity.png";
+import penetrate from "../../images/nlp.png";
+import deployment from "../../images/deployment1-min (1).png"
 import ReviewsSlider from "../Reviews/Review";
 <i></i>;
 
@@ -44,10 +44,10 @@ function Cybersecurity() {
             designed to protect your business.
           </p>
 
-            <div className={`bg-red-700 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5 lg:mt-20 rounded-lg 
+            <div className={`bg-red-700 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5 lg:mt-20 rounded
              animate__animated animate__backInUp animate__delay-2s pt-1
           `}>
-            <button className="bg-red-600 text-white lg:text-2xl lg:px-6 py-1 lg:py-2 w-full lg:h-12 rounded-lg">
+            <button className="bg-red-600 text-white lg:text-2xl lg:px-6 py-1 lg:py-2 w-full lg:h-12 rounded">
               READ MORE
             </button>
           </div>

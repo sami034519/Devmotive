@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import webimg from "../images/web-development.jpg";
-import mobile from "../images/mobile-app-dev-min.jpg";
-import devops from "../images/devops-cover1-min.jpg";
+import webimg from "../../images/web-development.jpg";
+import mobile from "../../images/mobile-app-dev-min.jpg";
+import devops from "../../images/devops-cover1-min.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import SAAS from "../images/ai-cover-min.jpg";
-import account from "../images/account.jpg";
-import security from "../images/security.jpg";
-import salarysheet from "../images/SALARYSHEET.jpg";
-import consulting from "../images/CONSULTING.jpg";
+import SAAS from "../../images/ai-cover-min.jpg";
+import account from "../../images/account.jpg";
+import security from "../../images/security.jpg";
+import salarysheet from "../../images/SALARYSHEET.jpg";
+import consulting from "../../images/CONSULTING.jpg";
 
 function Services() {
   useEffect(() => {
@@ -49,22 +49,22 @@ function Services() {
             {
               img: SAAS,
               title: "SAAS APPLICATION DEVELOPMENT",
-              path: "/services/saas-development",
+              path: "/services/software-development",
             },
             {
               img: security,
               title: "CYBER SECURITY SOLUTIONS",
-              path: "/services/cyber-security",
+              path: "/services/cybersecurity",
             },
             {
               img: webimg,
               title: "NETWORK SECURITY",
-              path: "/services/network-security",
+              path: "/services/cybersecurity",
             },
             {
               img: account,
               title: "FINANCE AND ACCOUNTING",
-              path: "/services/finance-accounting",
+              path: "/services/finance-accounting-services",
             },
             {
               img: devops,
@@ -74,7 +74,7 @@ function Services() {
             {
               img: salarysheet,
               title: "MONTHLY SALARY SHEET",
-              path: "/services/salary-sheet",
+              path: "/services/finance-accounting-services",
             },
             {
               img: consulting,

@@ -1,29 +1,29 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import background from "../images/bg5.png";
+import background from "../../images/bg5.png";
 import "animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import FaqSection from "../FAQS/Faqs";
-import client1 from "../images/client1.png";
-import client2 from "../images/client2.png";
-import client3 from "../images/client3.png";
-import client4 from "../images/client4.png";
-import client5 from "../images/client5.png";
-import client6 from "../images/client6.png";
-import client7 from "../images/client8.png";
-import client9 from "../images/client9.png";
-import client10 from "../images/client10.png";
-import client11 from "../images/client11.png";
-import client12 from "../images/client12.png";
-import client13 from "../images/client13.png";
-import clutch from "../images/clutch-3.png";
-import Google from "../images/google (1).png";
-import trust from "../images/trustpilot.png";
-import manifest from "../images/themanifest.png";
-import shopify from "../images/shopify.png";
-import Howwork from "../images/Howwe work.webp";
+import client1 from "../../images/client1.png";
+import client2 from "../../images/client2.png";
+import client3 from "../../images/client3.png";
+import client4 from "../../images/client4.png";
+import client5 from "../../images/client5.png";
+import client6 from "../../images/client6.png";
+import client7 from "../../images/client8.png";
+import client9 from "../../images/client9.png";
+import client10 from "../../images/client10.png";
+import client11 from "../../images/client11.png";
+import client12 from "../../images/client12.png";
+import client13 from "../../images/client13.png";
+import clutch from "../../images/clutch-3.png";
+import Google from "../../images/google (1).png";
+import trust from "../../images/trustpilot.png";
+import manifest from "../../images/themanifest.png";
+import shopify from "../../images/shopify.png";
+import Howwork from "../../images/Howwe work.webp";
 
 // Icons
 
@@ -226,10 +226,10 @@ function Myservices() {
             At DevMotives, we craft user-friendly, scalable software to help
             your business grow.
           </p>
-         <div className={`bg-red-700 pt-1 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5 lg:mt-20 rounded-lg 
+         <div className={`bg-red-700 pt-1 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5  lg:mt-20 rounded 
              animate__animated animate__backInUp animate__delay-2s
           `}>
-            <button className="bg-red-600 text-white lg:text-2xl lg:px-6 py-1 lg:py-2 w-full lg:h-12 rounded-lg">
+            <button className="bg-red-600 text-white lg:text-2xl lg:px-6 py-1 lg:py-2 w-full lg:h-12 rounded">
               READ MORE
             </button>
           </div>

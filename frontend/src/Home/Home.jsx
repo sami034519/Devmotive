@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import HeroCarousel from "../Crousal/Main";
 import Fiximage from "../images/elexoft-apps-min.png";
 import singlelogo from "../images/singlelogof-.png";
-import Technologies from "../Technologies/Technologies";
+import Technologies from "../components/Technologies/Technologies";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Home.css";
@@ -24,10 +24,10 @@ import Google from "../images/google (1).png";
 import trust from "../images/trustpilot.png";
 import manifest from "../images/themanifest.png";
 import shopify from "../images/shopify.png";
-import Services from "../Serviceshome/Services";
-import WhyChoose from "../Whychoose/Whychoose";
-import ReviewsSlider from "../Reviews/Review";
-import RecentWorks from "../RecentWorks/RecentWorks";
+import Services from "../components/Serviceshome/Services";
+import WhyChoose from "../components/Whychoose/Whychoose";
+import ReviewsSlider from "../components/Reviews/Review";
+import RecentWorks from "../components/RecentWorks/RecentWorks";
 
 function Home() {
   const clients = [

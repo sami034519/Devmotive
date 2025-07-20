@@ -18,7 +18,7 @@ import { NavLink, Link} from "react-router-dom";
 import logo from "../images/devmotivelogoupdate.png";
 
 function Header() {
-  const phoneNumber = "923330685543"; // international format
+  const phoneNumber = "+447961675363"; // international format
   const message =
     "Greetings To DevMotive! I Want To Know About Your Services..";
   const [showmessage, setshowmessage] = useState(false);
@@ -82,9 +82,8 @@ function Header() {
   const navItems = [
     { name: "HOME", path: "/" },
     { name: "SERVICES", path: "/services" },
-    { name: "BLOGS", path: "/blogs" },
-    { name: "TEAMS", path: "/teams" },
-    { name: "CONTACT US", path: "/contact" },
+    {name:'OUR MISSION',path:'/ourmission'},
+   { name: "CONTACT US", path: "/contactpage" },
   ];
 
   const servicesSubmenu = [
@@ -193,9 +192,9 @@ function Header() {
             >
               <FaWhatsapp />
             </a>
-            <div className="bg-red-700 pt-1 lg:w-40 w-28 lg:h-[30px] flex flex-col justify-end rounded-lg animate__animated animate__backInUp lg:mt-4">
+            <div className="bg-red-700 pt-1 lg:w-40 w-28 lg:h-[30px] flex flex-col justify-end rounded animate__animated animate__backInUp lg:mt-4">
               <button
-                className="bg-red-600 text-white lg:text-lg lg:px-6 py-2 hover:bg-green-700 lg:py-2 w-full lg:h-12 rounded-lg"
+                className="bg-red-600 text-white lg:text-lg lg:px-6 py-2 hover:bg-green-700 lg:py-2 w-full lg:h-12 rounded"
                 onClick={handleClick}
               >
                 FREE QUOTE

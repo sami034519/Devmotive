@@ -1,6 +1,8 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/singlelogof-.png";
+import axios from "axios";
 import {
   FaFacebookF,
   FaInstagram,
@@ -15,6 +17,36 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 function Footer() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
+
+  // Handle input changes
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // Handle form submit
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    try {
+      await axios.post("https://devmotive-backend.vercel.app/api/order", formData); // Use your backend URL
+      setStatus("Message sent successfully!");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      console.log(error);
+      console.error(error);
+      setStatus("Failed to send message.");
+    }
+  };
+
+
   useEffect(() => {
     AOS.init({
       duration: 500,
@@ -24,83 +56,117 @@ function Footer() {
   }, []);
   return (
     <>
-  <div className="relative z-30 bg-gradient-to-r from-white to-slate-300 w-full px-4 py-10 overflow-hidden">
-  {/* Heading */}
-  <div className="w-full flex justify-center pb-10">
-    <h1 className="text-4xl font-medium text-center text-gray-800" data-aos="fade-down">
-      FEEL <span className="text-red-600">FREE TO </span>CONTACT
-    </h1>
-  </div>
-
-  {/* Contact Area */}
-  <div className="flex flex-col lg:flex-row items-center justify-center gap-10 max-w-screen-xl mx-auto">
-    {/* Image with Social Overlay */}
-    <div className="relative group w-full max-w-lg" >
-      <img
-      loading="lazy"
-      data-aos="fade-up"
-        src={Contactimg}
-        alt="Contact"
-        className="w-full rounded-lg"
-      />
-      <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center gap-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-          <FaFacebookF className="text-white text-2xl hover:text-blue-500 transition" />
-        </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <FaTwitter className="text-white text-2xl hover:text-blue-500 transition" />
-        </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-          <FaLinkedinIn className="text-white text-2xl hover:text-sky-500 transition" />
-        </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-          <FaInstagram className="text-white text-2xl hover:text-red-500 transition" />
-        </a>
+<div className="relative z-30 bg-gradient-to-r from-white to-slate-300 w-full px-4 py-10 overflow-hidden">
+      {/* Heading */}
+      <div className="w-full flex justify-center pb-10">
+        <h1
+          className="text-4xl font-medium text-center text-gray-800"
+          data-aos="fade-down"
+        >
+          FEEL <span className="text-red-600">FREE TO </span>CONTACT
+        </h1>
       </div>
-    </div>
 
-    {/* Contact Form */}
-    <div className="w-full max-w-xl px-2" data-aos="fade-up">
-      <form className="flex flex-col gap-4">
-        {/* Name & Email */}
-        <div className="flex flex-col lg:flex-row gap-4">
-          <input
-            type="text"
-            placeholder="Name"
-            className="bg-white w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 rounded"
+      {/* Contact Area */}
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-10 max-w-screen-xl mx-auto">
+        {/* Image with Social Overlay */}
+        <div className="relative group w-full max-w-lg">
+          <img
+            loading="lazy"
+            data-aos="fade-up"
+            src={Contactimg}
+            alt="Contact"
+            className="w-full rounded-lg"
           />
-          <input
-            type="email"
-            placeholder="Email"
-            className="bg-white w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 rounded"
-          />
+          <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center gap-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className="text-white text-2xl hover:text-blue-500 transition" />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="text-white text-2xl hover:text-blue-500 transition" />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn className="text-white text-2xl hover:text-sky-500 transition" />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="text-white text-2xl hover:text-red-500 transition" />
+            </a>
+          </div>
         </div>
 
-        {/* Subject */}
-        <input
-          type="text"
-          placeholder="Subject"
-          className="bg-white w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 rounded"
-        />
+        {/* Contact Form */}
+        <div className="w-full max-w-xl px-2" data-aos="fade-up">
+          <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+            {/* Name & Email */}
+            <div className="flex flex-col lg:flex-row gap-4">
+              <input
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                type="text"
+                placeholder="Name"
+                className="bg-white w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 rounded"
+              />
+              <input
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                type="email"
+                placeholder="Email"
+                className="bg-white w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 rounded"
+              />
+            </div>
 
-        {/* Message */}
-        <textarea
-          placeholder="Message"
-          rows="5"
-          className="bg-white w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 rounded resize-none"
-        ></textarea>
+            {/* Subject */}
+            <input
+              name="subject"
+              value={formData.subject}
+              onChange={handleChange}
+              type="text"
+              placeholder="Subject"
+              className="bg-white w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 rounded"
+            />
 
-        {/* Submit Button */}
-        <button
-          type="submit"
-          className="w-full bg-red-600 text-white py-3 font-semibold rounded hover:bg-red-700 transition"
-        >
-          SUBMIT
-        </button>
-      </form>
+            {/* Message */}
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Message"
+              rows="5"
+              className="bg-white w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 rounded resize-none"
+            ></textarea>
+
+            {/* Submit Button */}
+            <button
+              type="submit"
+              className="w-full bg-red-600 text-white py-3 font-semibold rounded hover:bg-red-700 transition"
+            >
+              SUBMIT
+            </button>
+
+            {/* Status */}
+            {status && <p className="text-center font-medium text-green-700 mt-2">{status}</p>}
+          </form>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
 
 
@@ -111,7 +177,7 @@ function Footer() {
     
     {/* Left Links */}
     <div className="flex flex-col sm:flex-row justify-center items-center gap-6 font-medium">
-      <Link to="" className="hover:border-b-2 border-white transition">ABOUT</Link>
+      <Link to="/ourmission" className="hover:border-b-2 border-white transition">ABOUT</Link>
       <Link to="" className="hover:border-b-2 border-white transition">PORTFOLIO</Link>
       <Link to="" className="hover:border-b-2 border-white transition">SERVICES</Link>
     </div>
@@ -128,7 +194,7 @@ function Footer() {
     {/* Right Links */}
     <div className="flex flex-col sm:flex-row justify-center items-center gap-6 font-medium">
       <Link to="" className="hover:border-b-2 border-white transition">TEAMS</Link>
-      <Link to="" className="hover:border-b-2 border-white transition">CONTACT US</Link>
+      <Link to="/contactpage" className="hover:border-b-2 border-white transition">CONTACT US</Link>
       <Link to="" className="hover:border-b-2 border-white transition">HOME</Link>
     </div>
   </div>

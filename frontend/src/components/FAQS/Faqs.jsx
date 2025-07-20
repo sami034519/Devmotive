@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
-import logo from "../images/singlelogof-.png"
+import logo from "../../images/singlelogof-.png"
 
 const faqs = [
   {

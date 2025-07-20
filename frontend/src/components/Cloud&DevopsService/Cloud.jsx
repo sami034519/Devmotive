@@ -1,12 +1,12 @@
 import React from "react";
-import background from "../images/bg5.png";
-import cloud from "../images/cloud-hosting-min.png";
-import vps from "../images/vps.png";
-import serverless from "../images/serverless-hosting.png";
-import paas from "../images/paas.png";
-import managehost from "../images/managed-hosting-min.png";
-import dedicated from "../images/dedicated-hosting-min.png";
-import containerhosting from "../images/container-hosting-min.png"
+import background from "../../images/bg5.png";
+import cloud from "../../images/cloud-hosting-min.png";
+import vps from "../../images/vps.png";
+import serverless from "../../images/serverless-hosting.png";
+import paas from "../../images/paas.png";
+import managehost from "../../images/managed-hosting-min.png";
+import dedicated from "../../images/dedicated-hosting-min.png";
+import containerhosting from "../../images/container-hosting-min.png"
 import ReviewsSlider from "../Reviews/Review";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -46,10 +46,10 @@ function Cloud() {
             secure, and built for scale.
           </p>
 
-          <div className={`bg-red-700 pt-1 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5 lg:mt-20 rounded-lg 
+          <div className={`bg-red-700 pt-1 lg:w-56 w-28 lg:h-[52px] flex flex-col justify-end mt-5 lg:mt-20 rounded 
              animate__animated animate__backInUp animate__delay-2s
           `}>
-            <button className="bg-red-600 text-white lg:text-2xl lg:px-6 py-1 lg:py-2 w-full lg:h-12 rounded-lg">
+            <button className="bg-red-600 text-white lg:text-2xl lg:px-6 py-1 lg:py-2 w-full lg:h-12 rounded">
               READ MORE
             </button>
           </div>

@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "../images/singlelogof-.png";
-import homeconcept from "../images/home-concept.png";
-import homeicons from "../images/home-concept-icons.png";
-import home1 from "../images/home-concept-item-1.png";
-import home2 from "../images/home-concept-item-2.png";
-import home3 from "../images/home-concept-item-3.png";
-import home4 from "../images/project-home-1.jpg";
+import logo from "../../images/singlelogof-.png";
+import homeconcept from "../../images/home-concept.png";
+import homeicons from "../../images/home-concept-icons.png";
+import home1 from "../../images/home-concept-item-1.png";
+import home2 from "../../images/home-concept-item-2.png";
+import home3 from "../../images/home-concept-item-3.png";
+import home4 from "../../images/project-home-1.jpg";
 
 function Whychoose() {
   return (
