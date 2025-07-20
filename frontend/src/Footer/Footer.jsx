@@ -38,11 +38,12 @@ function Footer() {
     try {
       await axios.post("https://devmotive-backend.vercel.app/api/order", formData); // Use your backend URL
       setStatus("Message sent successfully!");
+      alert("Message sent successfully!")
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
-      console.log(error);
-      console.error(error);
+      
       setStatus("Failed to send message.");
+      
     }
   };
 
