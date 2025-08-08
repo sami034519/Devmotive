@@ -61,7 +61,7 @@ function Home() {
       <div className="relative w-full">
         {/* Background Image */}
         <img
-        loading="lazy"
+          loading="lazy"
           className=" fixed inset-0  -z-10 bottom-0"
           src={Fiximage}
           alt=""
@@ -83,38 +83,72 @@ function Home() {
             <h1 className="lg:text-3xl text-2xl font-semibold mb-2 text-slate-800">
               FASTEST GROWING COMPANY
             </h1>
-            <p className="text-sm lg:text-base text-gray-700" data-aos="zoom-in">
-              {" "}
-              <span className="text-red-600">DevMotive Ltd</span> is a{" "}
-              <span className="text-red-600">UK-based</span> IT and
-              <span className="text-red-600">financial services</span> company
-              founded in <span className="text-red-600">2025</span>,
+            <p
+              className="text-base leading-relaxed text-gray-700 space-y-2"
+              data-aos="zoom-in"
+            >
+              <span className="text-red-600 font-semibold">DevMotive Ltd</span>{" "}
+              is a <span className="text-red-600 font-semibold">UK-based</span>{" "}
+              IT and{" "}
+              <span className="text-red-600 font-semibold">
+                financial services
+              </span>{" "}
+              company founded in{" "}
+              <span className="text-red-600 font-semibold">2025</span>,
               specializing in innovative{" "}
-              <span className="text-red-600">software development</span>,
-              <span className="text-red-600">cybersecurity solutions</span>, and
-              professional{" "}
-              <span className="text-red-600">finance services</span>. Combining
-              the expertise of certified{" "}
-              <span className="text-red-600">accountants</span>, including{" "}
-              <span className="text-red-600">ACCA professionals</span>, with
-              skilled <span className="text-red-600">developers</span> and{" "}
-              <span className="text-red-600">ethical hackers</span>, DevMotive
+              <span className="text-red-600 font-semibold">
+                software development
+              </span>
+              ,{" "}
+              <span className="text-red-600 font-semibold">
+                cybersecurity solutions
+              </span>
+              , and professional{" "}
+              <span className="text-red-600 font-semibold">
+                finance services
+              </span>
+              . Combining the expertise of certified{" "}
+              <span className="text-red-600 font-semibold">accountants</span>,
+              including{" "}
+              <span className="text-red-600 font-semibold">
+                ACCA professionals
+              </span>
+              , with skilled{" "}
+              <span className="text-red-600 font-semibold">developers</span> and{" "}
+              <span className="text-red-600 font-semibold">
+                ethical hackers
+              </span>
+              , <span className="text-red-600 font-semibold">DevMotive</span>{" "}
               empowers businesses to grow securely and compliantly in today’s{" "}
-              <span className="text-red-600">digital economy</span>. Offering
-              tailored services ranging from{" "}
-              <span className="text-red-600">web</span> and{" "}
-              <span className="text-red-600">app development</span>
-              to <span className="text-red-600">cloud hosting</span>,{" "}
-              <span className="text-red-600">IT consulting</span>, and
-              full-scale{" "}
-              <span className="text-red-600">financial management</span>,
-              DevMotive is committed to helping{" "}
-              <span className="text-red-600">SMEs</span>,{" "}
-              <span className="text-red-600">startups</span>, and
-              <span className="text-red-600">professionals</span> navigate{" "}
-              <span className="text-red-600">digital transformation</span> and
-              <span className="text-red-600">financial optimization</span> with
-              precision and reliability.
+              <span className="text-red-600 font-semibold">
+                digital economy
+              </span>
+              . Offering tailored services ranging from{" "}
+              <span className="text-red-600 font-semibold">web</span> and{" "}
+              <span className="text-red-600 font-semibold">
+                app development
+              </span>{" "}
+              to{" "}
+              <span className="text-red-600 font-semibold">cloud hosting</span>,{" "}
+              <span className="text-red-600 font-semibold">IT consulting</span>,
+              and full-scale{" "}
+              <span className="text-red-600 font-semibold">
+                financial management
+              </span>
+              , <span className="text-red-600 font-semibold">DevMotive</span> is
+              committed to helping{" "}
+              <span className="text-red-600 font-semibold">SMEs</span>,{" "}
+              <span className="text-red-600 font-semibold">startups</span>, and{" "}
+              <span className="text-red-600 font-semibold">professionals</span>{" "}
+              navigate{" "}
+              <span className="text-red-600 font-semibold">
+                digital transformation
+              </span>{" "}
+              and{" "}
+              <span className="text-red-600 font-semibold">
+                financial optimization
+              </span>{" "}
+              with precision and reliability.
             </p>
           </div>
         </div>
@@ -133,13 +167,13 @@ function Home() {
           OUR FEATURED CLIENTS
         </h1>
       </div>
-      
+
       <div className="w-full flex justify-center relative bg-white z-30 p-4 pt-5 lg:pt-20">
         <div className="client-scroll-container relative  z-30 pt-12 shadow-md shadow-slate-200 bg-slate-50   p-2">
           <div className="client-scroll ">
             {clients.map((client, index) => (
               <img
-              loading="lazy"
+                loading="lazy"
                 key={index}
                 src={client}
                 alt={`client-${index}`}
@@ -152,7 +186,7 @@ function Home() {
       <div className="grid lg:grid-cols-5 grid-cols-2 lg:gap-0 gap-5  justify-items-center items-center bg-white relative z-30 pt-7 lg:pt-16 lg:px-44 pb-7 lg:pb-36">
         <div>
           <img
-          loading="lazy"
+            loading="lazy"
             data-aos="zoom-in-down"
             className="lg:w-32 w-20"
             src={clutch}
@@ -161,7 +195,7 @@ function Home() {
         </div>
         <div>
           <img
-          loading="lazy"
+            loading="lazy"
             data-aos="zoom-in-down"
             className="lg:w-44 w-24"
             src={Google}
@@ -170,7 +204,7 @@ function Home() {
         </div>
         <div>
           <img
-          loading="lazy"
+            loading="lazy"
             data-aos="zoom-in-up"
             className="lg:w-52 w-28"
             src={trust}
@@ -179,7 +213,7 @@ function Home() {
         </div>
         <div>
           <img
-          loading="lazy"
+            loading="lazy"
             data-aos="zoom-in-up"
             className="lg:w-52 w-28"
             src={manifest}
@@ -188,7 +222,7 @@ function Home() {
         </div>
         <div>
           <img
-          loading="lazy"
+            loading="lazy"
             data-aos="zoom-in-down"
             className="lg:w-52 w-28"
             src={shopify}
@@ -198,8 +232,8 @@ function Home() {
       </div>
 
       <ReviewsSlider />
-      <RecentWorks/>
-      <Technologies/>
+      <RecentWorks />
+      <Technologies />
     </>
   );
 }

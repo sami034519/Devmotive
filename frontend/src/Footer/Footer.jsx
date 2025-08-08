@@ -38,7 +38,7 @@ function Footer() {
     try {
       await axios.post("https://devmotive-backend.vercel.app/api/order", formData); // Use your backend URL
       setStatus("Message sent successfully!");
-      alert("Message sent successfully!")
+      alert("Message sent successfully!");
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       
@@ -216,19 +216,19 @@ function Footer() {
         {
           name: "Instagram",
           icon: <FaInstagram />,
-          url: "https://instagram.com",
+          url: "https://www.instagram.com/devmotive.uk?igsh=MWtrYm95NXJobGhjNA==",
           color: "hover:text-pink-500",
         },
         {
           name: "YouTube",
           icon: <FaYoutube />,
-          url: "https://youtube.com",
+          url: "https://youtube.com/@devmotive3?si=IvGCBHcgiAsZEwDJ",
           color: "hover:text-red-600",
         },
         {
           name: "TikTok",
           icon: <SiTiktok />,
-          url: "https://tiktok.com",
+          url: "http://tiktok.com/@devmotive0",
           color: "hover:text-black",
         },
         {

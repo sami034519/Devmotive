@@ -12,6 +12,7 @@ import ITConsulting from "./components/ITconsulting/Itconsulting";
 import MissionPage from "./components/OurMission/Ourmission";
 import ScrollToTop from "./ScrollToTop";
 import ContactPage from "./components/Contactpage/Contact";
+
 function App() {
   return (
     <Router>

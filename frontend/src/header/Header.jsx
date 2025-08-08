@@ -8,12 +8,13 @@ import {
   FaBars,
   FaCloud,
   FaShieldAlt,
+  FaInstagram,
   FaChartLine,
   FaCode,
   FaUserTie,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FcGoogle } from "react-icons/fc";
+
 import { NavLink, Link} from "react-router-dom";
 import logo from "../images/devmotivelogoupdate.png";
 
@@ -167,16 +168,16 @@ function Header() {
               <FaFacebookF />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/devmotive_?t=J2IVae_gZyitzvAG3bJcfw&s=09"
               className="hover:bg-blue-400 border-2 border-white p-1 rounded-lg"
             >
               <FaTwitter />
             </a>
             <a
-              href="https://google.com"
-              className="hover:bg-red-500 border-2 border-white p-1 rounded-lg"
+              href="https://www.instagram.com/devmotive.uk?igsh=MWtrYm95NXJobGhjNA=="
+              className="hover:bg-red-600 border-2 border-white p-1 rounded-lg"
             >
-              <FcGoogle />
+              <FaInstagram />
             </a>
             <a
               href="https://linkedin.com"

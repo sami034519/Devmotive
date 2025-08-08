@@ -1,11 +1,6 @@
 import React from "react";
 import logo from "../../images/singlelogof-.png";
-import homeconcept from "../../images/home-concept.png";
-import homeicons from "../../images/home-concept-icons.png";
-import home1 from "../../images/home-concept-item-1.png";
-import home2 from "../../images/home-concept-item-2.png";
-import home3 from "../../images/home-concept-item-3.png";
-import home4 from "../../images/project-home-1.jpg";
+import whychooseimg from '../../images/whychoose.JPG'
 
 function Whychoose() {
   return (
@@ -19,66 +14,9 @@ function Whychoose() {
         </h1>
       </div>
 
-      <div className="lg:h-[80vh] h-[40vh] bg-white z-30 relative w-full">
-        <div
-          data-aos="zoom-in-up"
-          data-aos-anchor-placement="center-center"
-          className="relative"
-        >
-          <div>
-            <img
-              loading="lazy"
-              className="absolute lg:left-9 left-2 top-24 w-[95%]"
-              src={homeconcept}
-              alt=""
-            />
-          </div>
-          <img
-            loading="lazy"
-            className="absolute lg:w-auto w-[90%] left-3 top-10 lg:top-28 lg:left-60"
-            src={homeicons}
-            alt=""
-          />
-          <div className="absolute lg:top-[230px] top-28 left-9 lg:left-[260px] border-dashed border-2 rounded-full border-slate-400 p-1">
-            <img loading="lazy" className="rounded-full lg:h-auto h-10" src={home1} alt="" />
-          </div>
-          <h1
-            className="absolute top-[170px] left-5 text-sm lg:top-[450px] lg:left-[310px] font-bold text-slate-400 lg:text-3xl"
-            style={{ fontFamily: '"Shadows Into Light", cursive' }}
-          >
-            STRATEGY
-          </h1>
-
-          <div className="absolute top-[120px] left-24 lg:top-[220px] lg:left-[32%] border-dashed border-2 rounded-full border-slate-400 p-1">
-            <img loading="lazy" className="lg:h-44 rounded-full h-12" src={home2} alt="" />
-          </div>
-          <h1
-            className="absolute top-44 left-24 text-sm lg:top-[460px] lg:left-[33%] font-bold text-slate-400 lg:text-3xl"
-            style={{ fontFamily: '"Shadows Into Light", cursive' }}
-          >
-            PLANNING
-          </h1>
-
-          <div className="absolute left-44 top-24 lg:top-[150px] lg:left-[50%] border-dashed border-2 rounded-full border-slate-400 p-1">
-            <img loading="lazy" className="lg:h-48 rounded-full h-14" src={home3} alt="" />
-          </div>
-          <h1
-            className="absolute lg:top-[420px] top-44 left-48 text-sm lg:left-[54%] font-bold text-slate-400 lg:text-3xl"
-            style={{ fontFamily: '"Shadows Into Light", cursive' }}
-          >
-            BUILD
-          </h1>
-
-          <div className="absolute lg:top-[120px] lg:right-[10%] right-5 top-24 border-dashed border-2 rounded-full border-slate-400 p-1">
-            <img loading="lazy" className="rounded-full lg:h-auto h-20" src={home4} alt="" />
-          </div>
-          <h1
-            className="absolute top-48 right-7 text-sm lg:top-[520px] lg:right-[14%] font-bold text-slate-400 lg:text-3xl"
-            style={{ fontFamily: '"Shadows Into Light", cursive' }}
-          >
-            OUR WORK
-          </h1>
-        </div>
+      
+      <div className="w-full" data-aos="zoom-in-up">
+        <img src={whychooseimg} className="object-cover" alt="" />
       </div>
 
       <div className="lg:h-[70vh] bg-slate-700 z-30 relative w-full gap-x-2 lg:gap-x-20 lg:flex-row flex-col flex justify-center items-center py-2">

@@ -85,7 +85,7 @@ export default function ContactPage() {
           >
             <FaEnvelope className="text-red-500 text-3xl mb-3 mx-auto" />
             <h3 className="text-lg font-semibold text-gray-800">Email</h3>
-            <p className="text-gray-600">info@devmotive.com</p>
+            <p className="text-gray-600">info@devmotive.uk</p>
           </div>
           <div
             data-aos="zoom-in-up"
