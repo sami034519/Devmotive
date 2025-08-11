@@ -149,15 +149,15 @@ function Header() {
           <div className="lg:flex hidden items-center space-x-4">
             <div className="flex items-center gap-1 border-r-2 border-white pr-3">
               <FaPhoneAlt className="text-green-400" />
-              <span>+1 234 567 890</span>
+              <span>+447961675363</span>
             </div>
             <div className="flex items-center gap-1 border-r-2 border-white pr-3">
               <FaWhatsapp className="text-green-500" />
-              <span>+1 987 654 321</span>
+              <span>+447961675363</span>
             </div>
             <div className="flex items-center gap-1 pr-3">
               <MdEmail className="text-red-400" />
-              <span>example@gmail.com</span>
+              <span>info@devmotive.uk</span>
             </div>
           </div>
           <div className="flex items-center space-x-3">
