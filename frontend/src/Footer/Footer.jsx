@@ -189,7 +189,7 @@ function Footer() {
         <img className="h-24 mx-auto mb-4" src={logo} alt="DevMotive Logo" loading="lazy"/>
       </Link>
       <p>© 2025 DEVMOTIVE. All Rights Reserved.</p>
-      <p>123 Baker Street, London W1U 6RS, United Kingdom</p>
+      <p>Clare Rd, Cardiff CF11 6RT, United Kingdom</p>
     </div>
 
     {/* Right Links */}

@@ -94,7 +94,7 @@ export default function ContactPage() {
             <FaMapMarkerAlt className="text-red-500 text-3xl mb-3 mx-auto" />
             <h3 className="text-lg font-semibold text-gray-800">Address</h3>
             <p className="text-gray-600">
-              Headquarters: London, United Kingdom Office #12
+              Clare Rd, Cardiff CF11 6RT, United Kingdom
             </p>
           </div>
           <div
