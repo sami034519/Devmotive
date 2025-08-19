@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaBullseye, FaHandsHelping, FaRocket, FaGlobe } from "react-icons/fa";
-import { NavLink} from "react-router-dom";
-import myimg from '../../images/img.png'
+import { NavLink } from "react-router-dom";
+import VisionSection from "../Ourvision/Vission"; // ✅ Import Vision component
 
 export default function MissionPage() {
   useEffect(() => {
@@ -122,62 +122,26 @@ export default function MissionPage() {
         >
           Join Us in Shaping the Future
         </h2>
-        <p data-aos="fade-up" data-aos-delay="200" className="max-w-2xl mx-auto text-lg">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="max-w-2xl mx-auto text-lg"
+        >
           Whether you are looking for cutting-edge software solutions or seeking
           a reliable partner to grow with, Devmotive is committed to making your
           vision a reality.
         </p>
         <div data-aos="fade-up" data-aos-delay="400">
-          <NavLink to={'/contactpage'}><button className="mt-6 bg-white text-red-500 hover:bg-red-600 hover:border hover:border-white hover:text-white px-6 py-3 font-semibold rounded shadow-md transition">
-            Contact Us
-          </button></NavLink>
-          
+          <NavLink to={"/contactpage"}>
+            <button className="mt-6 bg-white text-red-500 hover:bg-red-600 hover:border hover:border-white hover:text-white px-6 py-3 font-semibold rounded shadow-md transition">
+              Contact Us
+            </button>
+          </NavLink>
         </div>
       </section>
 
-       <section className="max-w-4xl mx-auto px-6 py-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          OUR <span className="text-red-500">VISION</span>
-        </h2>
-        <p className="text-lg text-slate-600 leading-relaxed">
-          To be the vanguard of digital transformation, empowering businesses
-          worldwide to thrive and flourish in the ever-evolving technological
-          landscape.  
-          We are committed to delivering cutting-edge solutions that inspire
-          growth, foster innovation, and make a lasting impact.
-        </p>
-      </section>
-
-      {/* MEET OUR LEADERS */}
-      <section className="bg-slate-100 py-16">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
-            MEET OUR <span className="text-red-500">VISIONARIES</span>
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-center">
-            <div>
-              <img
-                src={myimg}// Replace with CEO image
-                alt="Founder & CEO"
-                className="mx-auto rounded-lg shadow-lg h-64 w-64 object-contain"
-              />
-              <h3 className="mt-4 text-lg font-semibold">Ch Shaheer</h3>
-              <p className="text-sm text-slate-500">Founder & CEO</p>
-            </div>
-            <div>
-              <img
-                src={myimg} // Replace with Co-founder image
-                alt="Co-Founder & MD"
-                className="mx-auto rounded-lg shadow-lg h-64 w-64 object-contain"
-              />
-              <h3 className="mt-4 text-lg font-semibold">Ch Shaheer</h3>
-              <p className="text-sm text-slate-500">
-                Co-Founder & Managing Director
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Vision + Visionaries */}
+      <VisionSection />
     </div>
   );
 }
