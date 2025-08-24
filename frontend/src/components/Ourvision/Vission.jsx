@@ -1,12 +1,19 @@
 import React from "react";
-import ceo from '../../images/shaheer.png'
+import cofounder from '../../images/shaheer.png'
+import ceo from '../../images/ceo.png'
 const VisionSection = () => {
   const visionaries = [
     {
       id: 1,
-      name: "Muhammad Shaheer",
+      name: "Mhuhammad",
       image: ceo ,// replace with your image path
       post:'CEO & Founder'
+    },
+    {
+      id: 1,
+      name: "Muhammad Shaheer",
+      image: cofounder ,// replace with your image path
+      post:'Co-Founder & Managing Director'
     },
     
   ];
@@ -32,7 +39,7 @@ const VisionSection = () => {
           MEET OUR <span className="text-red-500">VISIONARIES</span>
         </h2>
 
-        <div className="mt-10 flex flex-wrap justify-center gap-10">
+        <div className="mt-10 flex flex-wrap justify-center gap-14">
           {visionaries.map((person) => (
             <div
               key={person.id}
