@@ -1,11 +1,11 @@
 import React from "react";
 import cofounder from '../../images/shaheer.png'
-import ceo from '../../images/ceo.png'
+import ceo from '../../images/ceo1.png'
 const VisionSection = () => {
   const visionaries = [
     {
       id: 1,
-      name: "Mhuhammad",
+      name: "Asef Iqbal",
       image: ceo ,// replace with your image path
       post:'CEO & Founder'
     },
@@ -39,22 +39,23 @@ const VisionSection = () => {
           MEET OUR <span className="text-red-500">VISIONARIES</span>
         </h2>
 
-        <div className="mt-10 flex flex-wrap justify-center gap-14">
-          {visionaries.map((person) => (
-            <div
-              key={person.id}
-              className="bg-white p-4 rounded-xl shadow-md w-64 text-center"
-            >
-              <img
-                src={person.image}
-                alt={person.name}
-                className="w-full rounded-lg"
-              />
-              <h3 className="mt-4 font-semibold text-lg">{person.name}</h3>
-              <p className="text-gray-600">{person.post}</p>
-            </div>
-          ))}
-        </div>
+       <div className="mt-10 flex flex-wrap justify-center gap-14">
+  {visionaries.map((person) => (
+    <div
+      key={person.id}
+      className="bg-white p-4 rounded-xl shadow-md w-64 text-center"
+    >
+      <img
+        src={person.image}
+        alt={person.name}
+        className="w-full h-72 object-contain rounded-lg" 
+      />
+      <h3 className="mt-4 font-semibold text-lg">{person.name}</h3>
+      <p className="text-gray-600">{person.post}</p>
+    </div>
+  ))}
+</div>
+
       </section>
     </div>
   );
